@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afsana Bhuiyan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- below stylesheet is for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- below is for fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#organizations">Organizations</a>
+    </nav>
+    <header>
+        <h1 id="header-title">Afsana Bhuiyan</h1>
+        <a href="resume.pdf" class="btn" download target="_blank">Download My Resume</a>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="headshot.jpeg" alt="Afsana Bhuiyan">
+            <p>
+                Hi I’m Afsana Bhuiyan, a software engineer with a passion for creating impactful solutions through
+                innovative coding and data analysis. I specialize in artificial intelligence, data visualization,
+                and web development. My goal is to harness technology to empower underrepresented communities and
+                make a meaningful difference in public service.
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="MovieMate.png" alt="MovieMate" loading="lazy">
+                <div class="project-content">
+                    <h2 class="project-title">MovieMate</h2>
+                    <p class="project-description">An interactive data visualization tool to map and analyze genre
+                        relationships.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/afsanab/MovieMate" target="_blank">View on GitHub</a>
+                        <a href="https://moviemate-virid.vercel.app/">View Live Site</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="project-card">
+                <img src="networkGraph.PNG" alt="GenreGalaxy" loading="lazy">
+                <div class="project-content">
+                    <h2 class="project-title">Genre Galaxy</h2>
+                    <p class="project-description">An interactive data visualization tool to map and analyze genre
+                        relationships.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/afsanab/GenreGalaxy" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="BinaryClassifier.png" alt="PosiText" loading="lazy">
+                <div class="project-content">
+                    <h2 class="project-title">PosiText</h2>
+                    <p class="project-description">A binary classifier using NLP to identify happiness in text.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/afsanab/PosiText" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="DormDetails.png" alt="SwiftDorms" loading="lazy">
+                <div class="project-content">
+                    <h2 class="project-title">SwiftDorms</h2>
+                    <p class="project-description">An open-source website for off-campus housing and roommate matching.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/yasirACTUALY/SwiftDorms" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="organizations">
+        <h2>Organizations</h2>
+        <div class="organization-container">
+            <div class="organization">
+                <img src="gwc.webp" alt="Girls Who Code">
+                <p>The Girls Who Code Summer Immersion program is where I began my programming journey, and I continued
+                    to be involved with Girls Who Code through active participation in the Girls Who Code Club at the
+                    Rensselaer Polytechnic Institute, and working as President of the club during. I also served as a
+                    Teaching Assistant for the Girls Who Code Summer Immersion Program.</p>
+            </div>
+            <div class="organization">
+                <img src="aot.jpeg" alt="America on Tech">
+                <p>During High school I sought out more opportunities to be involved in the tech community after being
+                    introduced to in during the GWC Summer Immersion Program. And I joined the America On Tech Tech 360
+                    program.</p>
+            </div>
+
+            <div class="organization">
+                <img src="ISO-NE.jpg" alt="ISO New England">
+                <p>Short description of Organization 2 and your involvement.</p>
+            </div>
+            <div class="organization">
+                <img src="opal.png" alt="Opal">
+                <p>Short description of Organization 2 and your involvement.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Connect with me:</p>
+        <p>
+            <a href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a> |
+            <a href="mailto:afsanab620@gmail.com">
+                <i class="fa fa-envelope"></i> Email
+            </a> |
+            <a href="https://github.com/afsanab">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+        </p>
+    </footer>
+
+    <script>
+        document.getElementById('theme-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const category = button.getAttribute('data-category');
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (category === 'all' || card.getAttribute('data-category') === category) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

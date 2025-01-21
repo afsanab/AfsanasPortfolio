@@ -1,0 +1,251 @@
+/* Base Styles */
+body {
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #1b1b1b;
+    color: #e4e4e4;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Uniform Heading Styles */
+h1 {
+    font-family: "Russo One", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #aecbe9;
+    margin-bottom: 20px;
+    font-size: 5rem;
+}
+
+h2,
+h3 {
+    font-family: "Space Mono", monospace;
+    font-weight: bold;
+    text-align: center;
+    color: #aecbe9;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+header .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7baadb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    max-width: 200px;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+}
+
+/* About Section */
+#about {
+    display: flex;
+    flex-direction: column;
+    /* Stack children vertically */
+    align-items: center;
+    /* Center-align the content */
+    gap: 20px;
+    /* Space between elements */
+    padding: 40px;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between image and text */
+    flex-wrap: wrap;
+    /* Ensure responsiveness */
+    max-width: 800px;
+    /* Optional: limit width for cleaner layout */
+}
+
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.about-content p {
+    text-align: left;
+    /* Align text to the left */
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e4e4e4;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    color: #333;
+    background-color: #7baadb;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7baadb;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #6ea1d7;
+}
+
+/* Project Section */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: #292929;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* GitHub Button Styles */
+.project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.project-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #e4e4e4;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.project-links a:hover {
+    background-color: #7baadb;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Filter Buttons */
+#filter-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    background-color: #292929;
+    color: #e4e4e4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-btn:hover {
+    background-color: #7baadb;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #292929;
+    color: #e4e4e4;
+    text-align: center;
+    height: 200px;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+
+footer a {
+    color: #e4e4e4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #4caf50;
+}

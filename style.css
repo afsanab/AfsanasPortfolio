@@ -204,27 +204,53 @@ nav a:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
 }
 
-/* Filter Buttons */
-#filter-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
-}
+/* Organizations */
 
-.filter-btn {
-    padding: 10px 15px;
+#organizations {
+    padding: 40px;
     background-color: #292929;
-    color: #e4e4e4;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    /* Light background for contrast */
 }
 
-.filter-btn:hover {
-    background-color: #7baadb;
-    color: #fff;
+#organizations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #e4e4e4;
+}
+
+.organization-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.organization {
+    text-align: center;
+    max-width: 200px;
+    margin: 0 10px;
+}
+
+.organization img {
+    width: 150px;
+    /* Uniform width */
+    height: 150px;
+    /* Uniform height */
+    object-fit: contain;
+    /* Ensures the logo fits without distortion */
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    /* Optional: Add a border */
+    border-radius: 8px;
+    /* Optional: Rounded corners */
+}
+
+.organization p {
+    font-size: 14px;
+    color: #e4e4e4;
+    margin-top: 10px;
+    line-height: 1.4;
 }
 
 /* Footer */

@@ -240,7 +240,6 @@ nav a:hover {
     object-fit: contain;
     /* Ensures the logo fits without distortion */
     margin-bottom: 10px;
-    border: 1px solid #ddd;
     /* Optional: Add a border */
     border-radius: 8px;
     /* Optional: Rounded corners */

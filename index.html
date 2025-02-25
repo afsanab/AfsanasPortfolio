@@ -95,40 +95,47 @@
             </div>
         </div>
     </section>
+
     <section id="organizations">
         <h2>Organizations</h2>
         <div class="organization-container">
-            <div class="organization">
+            <div class="organization" data-title="OppNet"
+                data-description="I was a part of the OppNet Prep Program where I learned professional skills and attended networking events.">
                 <img src="images/oppnet.jpg" alt="OppNet">
-                <p>I was a part of the OppNet Prep Program where I learned professional skills and attending networking
-                    events.</p>
             </div>
-            <div class="organization">
+            <div class="organization" data-title="Girls Who Code"
+                data-description="I began my programming journey with the Girls Who Code Summer Immersion Program (SIP). At RPI, I actively participated in the GWC Club, serving as President and later as a Teaching Assistant for their SIP.">
                 <img src="images/gwc.png" alt="Girls Who Code">
-                <p>I began my programming journey with the Girls Who Code Summer Immersion Program(SIP). At RPI, I
-                    actively participated in the GWC Club, serving as President and
-                    later as a Teaching Assistant for their SIP.</p>
             </div>
-            <div class="organization">
+            <div class="organization" data-title="America on Tech"
+                data-description="In high school, I joined America On Tech’s Tech 360 Program, further deepening my interest in technology and expanding my technical skills through hands-on projects and workshops.">
                 <img src="images/aot.jpeg" alt="America on Tech">
-                <p>In high school, I joined America On Tech’s Tech 360 Program, further deepening my interest in
-                    technology and expanding my technical skills through hands-on projects and workshops.</p>
             </div>
-            <div class="organization">
+            <div class="organization" data-title="Opal"
+                data-description="After graduation, I joined Opal, where I was paired with a mentor to develop professional and leadership skills.">
                 <img src="images/opal.png" alt="Opal">
-                <p>After graduation, I joined Opal, where I was paired with a mentor to develop professional skills and
-                    leadership skills.</p>
             </div>
-            <div class="organization">
+            <div class="organization" data-title="COOP"
+                data-description="Currently, I am a data analytics fellow at COOP.">
                 <img src="images/COOP.jpg" alt="COOP">
-                <p>Currently, I am a data analytics fellow at COOP.</p>
             </div>
-            <div class="organization">
+            <div class="organization" data-title="CodePath"
+                data-description="Currently, I am a Technical Interview Prep Student at CodePath.">
                 <img src="images/codePath.jpg" alt="CodePath">
-                <p>Currently, I am a Technical Interview Prep Student at CodePath.</p>
             </div>
         </div>
     </section>
+
+
+    <!-- Modal for displaying organization details -->
+    <div id="orgModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="orgModalTitle"></h2>
+            <p id="orgModalDesc"></p>
+        </div>
+    </div>
+
 
 
     <footer>
@@ -147,23 +154,30 @@
     </footer>
 
     <script>
-        document.getElementById('theme-toggle').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-
-        document.querySelectorAll('.filter-btn').forEach(button => {
-            button.addEventListener('click', () => {
-                const category = button.getAttribute('data-category');
-                document.querySelectorAll('.project-card').forEach(card => {
-                    if (category === 'all' || card.getAttribute('data-category') === category) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
+        // Open modal with organization details when a logo is clicked
+        document.querySelectorAll('.organization').forEach(org => {
+            org.addEventListener('click', function () {
+                const title = this.getAttribute('data-title');
+                const description = this.getAttribute('data-description');
+                document.getElementById('orgModalTitle').innerText = title;
+                document.getElementById('orgModalDesc').innerText = description;
+                document.getElementById('orgModal').style.display = 'block';
             });
         });
+
+        // Close the modal when the close icon is clicked
+        document.querySelector('.modal .close').addEventListener('click', function () {
+            document.getElementById('orgModal').style.display = 'none';
+        });
+
+        // Close the modal when clicking outside the modal content
+        window.addEventListener('click', function (event) {
+            if (event.target === document.getElementById('orgModal')) {
+                document.getElementById('orgModal').style.display = 'none';
+            }
+        });
     </script>
+
 </body>
 
 </html>

@@ -5,93 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Afsana Bhuiyan | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- below stylesheet is for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- below is for fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
-        rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
     <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#organizations">Organizations</a>
+        <div class="nav-container">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#organizations">Organizations</a>
+            <a href="#contact">Contact</a>
+        </div>
     </nav>
+
     <header>
-        <h1 id="header-title">Afsana Bhuiyan</h1>
-        <p>Software Engineer | Data Analyst | Web Developer</p>
+        <h1 class="header-title">Afsana Bhuiyan</h1>
+        <p class="header-subtitle">Software Engineer | Data Analyst | Web Developer</p>
         <a href="assets/Afsana_Bhuiyan_Resume.pdf" class="btn" download target="_blank">Resume</a>
     </header>
 
     <section id="about">
-        <h2 style="text-align: center;">About Me</h2>
-        <div class="about-content"
-            style="display: flex; align-items: center; justify-content: space-between; gap: 20px; max-width: 800px; margin: auto; text-align: left;">
-            <img src="images/headshot.jpeg" alt="Afsana Bhuiyan"
-                style="width: 180px; height: 180px; border-radius: 10%; object-fit: cover; flex-shrink: 0;">
-            <p style="flex: 1;">
-                Hi, I’m Afsana Bhuiyan, a software engineer with a passion for creating impactful solutions through
-                innovative coding and data analysis. I specialize in artificial intelligence, data visualization,
-                and web development. My goal is to harness technology to empower underrepresented communities and
-                make a meaningful difference in public service.
+        <div class="about-container">
+            <img src="images/headshot.jpeg" alt="Afsana Bhuiyan">
+            <p>Hi, I’m Afsana Bhuiyan, a software engineer with a passion for creating impactful solutions through
+                innovative coding and data analysis. My goal is to harness technology to empower underrepresented
+                communities.
             </p>
         </div>
     </section>
 
     <section id="projects">
-        <h2>My Projects</h2>
+        <h2>Projects</h2>
         <div class="projects-container">
             <div class="project-card">
-                <img src="images/MovieMate.png" alt="MovieMate" loading="lazy">
-                <div class="project-content">
-                    <h2 class="project-title">MovieMate</h2>
-                    <p class="project-description">A movie reccomendation platform based on user preferences.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/afsanab/MovieMate" target="_blank">View on GitHub</a>
-                        <a href="https://moviemate-virid.vercel.app/">View Live Site</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="project-card">
-                <img src="images/networkGraph.PNG" alt="GenreGalaxy" loading="lazy">
-                <div class="project-content">
-                    <h2 class="project-title">Genre Galaxy</h2>
-                    <p class="project-description">An interactive data visualization tool to map and analyze genre
-                        relationships.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/afsanab/GenreGalaxy" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
+                <img src="images/MovieMate.png" alt="MovieMate">
+                <h3>MovieMate</h3>
+                <p>A movie recommendation platform based on user preferences.</p>
+                <a href="https://github.com/afsanab/MovieMate" target="_blank">GitHub</a>
+                <a href="https://moviemate-virid.vercel.app/" target="_blank">Live Site</a>
             </div>
             <div class="project-card">
-                <img src="images/BinaryClassifier.png" alt="PosiText" loading="lazy">
-                <div class="project-content">
-                    <h2 class="project-title">PosiText</h2>
-                    <p class="project-description">A binary classifier using NLP to identify happiness in text.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/afsanab/PosiText" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
+                <img src="images/networkGraph.PNG" alt="GenreGalaxy">
+                <h3>Genre Galaxy</h3>
+                <p>An interactive data visualization tool to map genre relationships.</p>
+                <a href="https://github.com/afsanab/GenreGalaxy" target="_blank">GitHub</a>
             </div>
             <div class="project-card">
-                <img src="images/DormDetails.png" alt="SwiftDorms" loading="lazy">
-                <div class="project-content">
-                    <h2 class="project-title">SwiftDorms</h2>
-                    <p class="project-description">An open-source website for off-campus housing and roommate matching.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/yasirACTUALY/SwiftDorms" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
+                <img src="images/BinaryClassifier.png" alt="PosiText">
+                <h3>PosiText</h3>
+                <p>A binary classifier using NLP to identify happiness in text.</p>
+                <a href="https://github.com/afsanab/PosiText" target="_blank">GitHub</a>
+            </div>
+            <div class="project-card">
+                <img src="images/DormDetails.png" alt="SwiftDorms">
+                <h3>SwiftDorms</h3>
+                <p>An open-source website for off-campus housing and roommate matching.</p>
+                <a href="https://github.com/yasirACTUALY/SwiftDorms" target="_blank">GitHub</a>
             </div>
         </div>
     </section>
@@ -99,35 +70,32 @@
     <section id="organizations">
         <h2>Organizations</h2>
         <div class="organization-container">
-            <div class="organization" data-title="OppNet"
-                data-description="I was a part of the OppNet Prep Program where I learned professional skills and attended networking events.">
+            <div class="organization-card" data-title="OppNet"
+                data-description="OppNet Prep Program participant, learning professional skills and networking.">
                 <img src="images/oppnet.jpg" alt="OppNet">
             </div>
-            <div class="organization" data-title="Girls Who Code"
-                data-description="I began my programming journey with the Girls Who Code Summer Immersion Program (SIP). At RPI, I actively participated in the GWC Club, serving as President and later as a Teaching Assistant for their SIP.">
+            <div class="organization-card" data-title="Girls Who Code"
+                data-description="GWC Summer Immersion Program alum, past club President, and Teaching Assistant.">
                 <img src="images/gwc.png" alt="Girls Who Code">
             </div>
-            <div class="organization" data-title="America on Tech"
-                data-description="In high school, I joined America On Tech’s Tech 360 Program, further deepening my interest in technology and expanding my technical skills through hands-on projects and workshops.">
+            <div class="organization-card" data-title="America on Tech"
+                data-description="Tech 360 Program participant, expanding technical skills through hands-on projects.">
                 <img src="images/aot.jpeg" alt="America on Tech">
             </div>
-            <div class="organization" data-title="Opal"
-                data-description="After graduation, I joined Opal, where I was paired with a mentor to develop professional and leadership skills.">
+            <div class="organization-card" data-title="Opal"
+                data-description="Post-grad mentee, developing professional and leadership skills.">
                 <img src="images/opal.png" alt="Opal">
             </div>
-            <div class="organization" data-title="COOP"
-                data-description="Currently, I am a data analytics fellow at COOP.">
+            <div class="organization-card" data-title="COOP" data-description="Current Data Analytics Fellow at COOP.">
                 <img src="images/COOP.jpg" alt="COOP">
             </div>
-            <div class="organization" data-title="CodePath"
-                data-description="Currently, I am a Technical Interview Prep Student at CodePath.">
+            <div class="organization-card" data-title="CodePath"
+                data-description="Technical Interview Prep Student at CodePath.">
                 <img src="images/codePath.jpg" alt="CodePath">
             </div>
         </div>
     </section>
 
-
-    <!-- Modal for displaying organization details -->
     <div id="orgModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -136,48 +104,12 @@
         </div>
     </div>
 
-
-
     <footer>
         <p>Connect with me:</p>
-        <p>
-            <a href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank">
-                <i class="fa fa-linkedin"></i> LinkedIn
-            </a> |
-            <a href="mailto:afsanab620@gmail.com">
-                <i class="fa fa-envelope"></i> Email
-            </a> |
-            <a href="https://github.com/afsanab">
-                <i class="fa fa-github"></i> GitHub
-            </a>
-        </p>
+        <a href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:afsanab620@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+        <a href="https://github.com/afsanab"><i class="fa fa-github"></i> GitHub</a>
     </footer>
-
-    <script>
-        // Open modal with organization details when a logo is clicked
-        document.querySelectorAll('.organization').forEach(org => {
-            org.addEventListener('click', function () {
-                const title = this.getAttribute('data-title');
-                const description = this.getAttribute('data-description');
-                document.getElementById('orgModalTitle').innerText = title;
-                document.getElementById('orgModalDesc').innerText = description;
-                document.getElementById('orgModal').style.display = 'block';
-            });
-        });
-
-        // Close the modal when the close icon is clicked
-        document.querySelector('.modal .close').addEventListener('click', function () {
-            document.getElementById('orgModal').style.display = 'none';
-        });
-
-        // Close the modal when clicking outside the modal content
-        window.addEventListener('click', function (event) {
-            if (event.target === document.getElementById('orgModal')) {
-                document.getElementById('orgModal').style.display = 'none';
-            }
-        });
-    </script>
-
 </body>
 
 </html>

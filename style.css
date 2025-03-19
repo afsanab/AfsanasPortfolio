@@ -83,20 +83,27 @@ nav a:hover {
 /* About Section */
 .about-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
     max-width: 800px;
     margin: auto;
-    text-align: center;
+    text-align: left;
 }
 
 .about-container img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
+    flex-shrink: 0;
+}
+
+.about-container p {
+    flex: 1;
+    max-width: 500px;
 }
 
 /* Projects */

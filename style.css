@@ -419,3 +419,75 @@ footer a:hover {
     transform: none;
     transition: opacity .5s ease, transform .5s ease;
 }
+
+/* Particles: colors adapt to theme */
+:root {
+    /* particles are subtle in dark mode */
+    --particle: rgba(255, 255, 255, 0.12);
+    --particle-2: rgba(255, 255, 255, 0.06);
+}
+
+body.light {
+    /* slightly darker dots in light mode for contrast */
+    --particle: rgba(0, 0, 0, 0.10);
+    --particle-2: rgba(0, 0, 0, 0.05);
+}
+
+/* Ensure hero is the animation container */
+.hero {
+    position: relative;
+    overflow: hidden;
+    /* optional: a soft base so the dots read well in both themes */
+    background: transparent;
+}
+
+/* Layer 1: fine dot grid drifting upward */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--particle) 1px, transparent 1.6px);
+    background-size: 22px 22px;
+    animation: particleDrift 55s linear infinite;
+    transform: translateZ(0);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Layer 2: larger, lighter dots for depth, slower drift */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(var(--particle-2) 1.5px, transparent 2.2px);
+    background-size: 34px 34px;
+    animation: particleDriftSlow 95s linear infinite;
+    transform: translateZ(0);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.hero * {
+    position: relative;
+    z-index: 1;
+}
+
+@keyframes particleDrift {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-800px);
+    }
+}
+
+@keyframes particleDriftSlow {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-600px);
+    }
+}

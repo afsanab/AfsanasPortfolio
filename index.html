@@ -2,129 +2,221 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio of Afsana Bhuiyan - Software Engineer and Data Analyst with expertise in AI, data visualization, and web development.">
-    <meta name="keywords"
-        content="Afsana Bhuiyan, Software Engineer, Data Analyst, AI, Data Visualization, Web Development, Portfolio">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Afsana Bhuiyan — Data Analyst • Data Scientist • Data Engineer" />
     <title>Afsana Bhuiyan | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <!-- Styles & Scripts -->
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
 </head>
 
 <body>
+    <!-- Nav -->
     <nav>
         <div class="nav-container">
             <a href="#about" aria-label="About section">About</a>
             <a href="#projects" aria-label="Projects section">Projects</a>
+            <a href="#skills" aria-label="Skills section">Skills</a>
             <a href="#organizations" aria-label="Organizations section">Organizations</a>
             <a href="#contact" aria-label="Contact section">Contact</a>
         </div>
     </nav>
 
-    <header>
+    <!-- Hero -->
+    <header class="hero reveal">
         <h1 class="header-title">Afsana Bhuiyan</h1>
-        <a href="AfsanaBhuiyan_Resume.pdf" class="btn" download target="_blank">Resume</a>
-        <a href="https://github.com/afsanab" class="btn" target="_blank">GitHub</a>
-
+        <p class="subtitle">
+            <span id="roleRotator" class="role-rotator">Data Analyst</span>
+        </p>
+        <p class="tagline">
+            Transforming complex datasets into clear, actionable insights with Python, SQL, and advanced data
+            visualization.
+        </p>
+        <div class="hero-ctas">
+            <a class="btn primary" href="assets/Afsana_Bhuiyan_Resume.pdf" target="_blank" rel="noopener">Download
+                Resume</a>
+            <a class="btn ghost" href="https://github.com/afsanab" target="_blank" rel="noopener">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a class="btn ghost" href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank" rel="noopener">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+        </div>
     </header>
 
-    <section id="about">
+    <!-- About -->
+    <section id="about" class="section reveal">
+        <h2>About</h2>
         <div class="about-container">
-            <img src="images/headshot.jpg" alt="Afsana Bhuiyan Headshot">
-            <p>Hi, I’m Afsana, a software engineer and data analyst with a passion for solving problems with code. With
-                a background in AI, data visualization, and web development, I enjoy turning complex data into
-                actionable insights. I've developed projects in media, entertainment, and
-                public service, and I'm eager to continue exploring the intersection of tech, data, and social impact.
-                When I’m not coding, you’ll find me diving into a good book or trying a new recipe.
+            <img src="images/headshot.jpg" alt="Afsana Bhuiyan headshot" loading="lazy" />
+            <p>
+                Hi, I'm Afsana! I’m a software engineer with a strong focus on data analytics, leveraging Python, SQL,
+                and visualization
+                to explore data, identify patterns, and create tools that make information easier to understand and use.
+                My experience spans from developing interactive web applications to producing clear, meaningful
+                analyses. I’m motivated by curiosity, problem-solving, and the challenge of finding practical solutions.
+                Outside of work, I enjoy reading, hiking, and trying new cafes.
             </p>
         </div>
     </section>
 
-    <section id="projects">
+    <!-- Projects -->
+    <section id="projects" class="section reveal">
         <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project-card">
-                <img src="images/MovieMate.png" alt="MovieMate">
+        <p class="lead">Selected work across analytics, ML/NLP, and full‑stack data apps.</p>
+
+        <!-- Filter Chips -->
+        <div class="chips" id="projectChips" role="tablist" aria-label="Project filters">
+            <button class="chip active" data-tech="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-tech="python" role="tab">Python</button>
+            <button class="chip" data-tech="sql" role="tab">SQL</button>
+            <button class="chip" data-tech="flask" role="tab">Flask</button>
+            <button class="chip" data-tech="tableau" role="tab">Tableau</button>
+        </div>
+
+        <div class="projects-container" id="projectsGrid">
+            <!-- MovieMate -->
+            <article class="project-card" data-tech="python,flask" tabindex="0">
+                <img src="images/MovieMate.png" alt="Screenshot of MovieMate app" loading="lazy" />
+                <div class="project-meta">
+                    <span class="badge">Python</span>
+                    <span class="badge">Flask</span>
+                    <span class="badge">Frontend Development</span>
+                </div>
                 <h3>MovieMate</h3>
                 <p>A movie recommendation platform based on user preferences.</p>
-                <a href="https://github.com/afsanab/MovieMate" target="_blank">GitHub</a>
-                <a href="https://moviemate-virid.vercel.app/" target="_blank">Live Site</a>
-            </div>
-            <div class="project-card">
-                <img src="images/networkGraph.PNG" alt="GenreGalaxy">
+                <div class="actions">
+                    <a class="btn small" href="https://github.com/afsanab/MovieMate" target="_blank"
+                        rel="noopener">GitHub</a>
+                    <a class="btn small ghost" href="https://moviemate-virid.vercel.app/" target="_blank"
+                        rel="noopener">Live Site</a>
+                </div>
+            </article>
+
+            <!-- Genre Galaxy -->
+            <article class="project-card" data-tech="python,flask,networkx,viz" tabindex="0">
+                <img src="images/networkGraph.PNG" alt="Network visualization from Genre Galaxy" loading="lazy" />
+                <div class="project-meta">
+                    <span class="badge">Python</span>
+                    <span class="badge">Flask</span>
+                    <span class="badge">Visualization</span>
+                </div>
                 <h3>Genre Galaxy</h3>
-                <p>An interactive data visualization tool to map genre relationships.</p>
-                <a href="https://github.com/afsanab/GenreGalaxy" target="_blank">GitHub</a>
-                <a href="https://genregalaxy.onrender.com/" target="_blank">Live Site</a>
-            </div>
-            <div class="project-card">
-                <img src="images/SpatialDashboard.png" alt="SpacialMarketingDashboard">
-                <h3>Spacial Marketing Dashboard</h3>
-                <p>A Tableau dashboard analyzing spatial marketing data.</p>
-                <a href="https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard?:language=en-US&:sid=&:redirect=auth&showOnboarding=true&:display_count=n&:origin=viz_share_link"
-                    target="_blank">Tableau Public</a>
-            </div>
-            <!-- <div class="project-card">
-                <img src="images/BinaryClassifier.png" alt="PosiText">
-                <h3>PosiText</h3>
-                <p>A binary classifier using NLP to identify happiness in text.</p>
-                <a href="https://github.com/afsanab/PosiText" target="_blank">GitHub</a>
-            </div>
-            <div class="project-card">
-                <img src="images/DormDetails.png" alt="SwiftDorms">
-                <h3>SwiftDorms</h3>
-                <p>An open-source website for off-campus housing and roommate matching.</p>
-                <a href="https://github.com/yasirACTUALY/SwiftDorms" target="_blank">GitHub</a>
-            </div> -->
+                <p>Interactive visualization to map relationships between film genres.</p>
+                <div class="actions">
+                    <a class="btn small" href="https://github.com/afsanab/GenreGalaxy" target="_blank"
+                        rel="noopener">GitHub</a>
+                    <a class="btn small ghost" href="https://genregalaxy.onrender.com/" target="_blank"
+                        rel="noopener">Live Site</a>
+                </div>
+            </article>
+
+            <!-- Spatial Marketing Dashboard -->
+            <article class="project-card" data-tech="tableau,sql,analytics" tabindex="0">
+                <img src="images/SpatialDashboard.png" alt="Spatial Marketing Tableau dashboard" loading="lazy" />
+                <div class="project-meta">
+                    <span class="badge">Tableau</span>
+                    <span class="badge">SQL</span>
+                    <span class="badge">Analytics</span>
+                </div>
+                <h3>Spatial Marketing Dashboard</h3>
+                <p>Tableau dashboard analyzing KPI trends across U.S. states.</p>
+                <div class="actions">
+                    <a class="btn small"
+                        href="https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard?:language=en-US&:sid=&:redirect=auth&showOnboarding=true&:display_count=n&:origin=viz_share_link"
+                        target="_blank" rel="noopener">Tableau Public</a>
+                </div>
+            </article>
         </div>
     </section>
 
-    <section id="organizations">
+    <!-- Skills -->
+    <section id="skills" class="section reveal">
+        <h2>Skills</h2>
+        <p class="lead">Core tools I use across analytics, data science, and engineering.</p>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Python</h3>
+                <p>Pandas, NumPy, scikit‑learn, requests, Jupyter</p>
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <p>Joins, CTEs, window functions, optimization</p>
+            </div>
+            <div class="skill-card">
+                <h3>Visualization</h3>
+                <p>Tableau, Plotly, basic d3.js</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Eng</h3>
+                <p>APIs/ETL, Firebase, basic GCP/AWS</p>
+            </div>
+            <div class="skill-card">
+                <h3>Web</h3>
+                <p>Flask, React basics, HTML/CSS/JS</p>
+            </div>
+            <div class="skill-card">
+                <h3>Workflow</h3>
+                <p>Git/GitHub, Notion, CLI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organizations -->
+    <section id="organizations" class="section reveal">
         <h2>Organizations</h2>
         <div class="organization-container">
-            <div class="organization-card" data-title="Girls Who Code"
+            <button class="organization-card" data-title="Girls Who Code"
                 data-description="GWC Summer Immersion Program alum, past club President, and Teaching Assistant.">
-                <img src="images/gwc.png" alt="Girls Who Code">
-            </div>
-            <div class="organization-card" data-title="COOP" data-description="Current Data Analytics Fellow at COOP.">
-                <img src="images/COOP.jpg" alt="COOP">
-            </div>
-            <div class="organization-card" data-title="CodePath"
+                <img src="images/gwc.png" alt="Girls Who Code" loading="lazy" />
+            </button>
+            <button class="organization-card" data-title="COOP"
+                data-description="Current Data Analytics Fellow at COOP.">
+                <img src="images/COOP.jpg" alt="COOP Careers" loading="lazy" />
+            </button>
+            <button class="organization-card" data-title="CodePath"
                 data-description="Technical Interview Prep Student at CodePath.">
-                <img src="images/codePath.jpg" alt="CodePath">
-            </div>
-            <div class="organization-card" data-title="Opal"
-                data-description="Post-grad mentee, developing professional and leadership skills.">
-                <img src="images/opal.png" alt="Opal">
-            </div>
-            <div class="organization-card" data-title="OppNet"
+                <img src="images/codePath.jpg" alt="CodePath" loading="lazy" />
+            </button>
+            <button class="organization-card" data-title="Opal"
+                data-description="Post‑grad mentee, developing professional and leadership skills.">
+                <img src="images/opal.png" alt="Opal" loading="lazy" />
+            </button>
+            <button class="organization-card" data-title="OppNet"
                 data-description="OppNet Prep Program participant, learning professional skills and networking.">
-                <img src="images/oppnet.jpg" alt="OppNet">
-            </div>
-            <div class="organization-card" data-title="America on Tech"
-                data-description="Tech 360 Program participant, expanding technical skills through hands-on projects.">
-                <img src="images/aot.jpeg" alt="America on Tech">
-            </div>
+                <img src="images/oppnet.jpg" alt="OppNet" loading="lazy" />
+            </button>
+            <button class="organization-card" data-title="America on Tech"
+                data-description="Tech 360 Program participant, expanding technical skills through hands‑on projects.">
+                <img src="images/aot.jpeg" alt="America on Tech" loading="lazy" />
+            </button>
         </div>
     </section>
 
-    <div id="orgModal" class="modal">
+    <!-- Modal -->
+    <div id="orgModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="orgModalTitle">
         <div class="modal-content">
-            <span class="close">&times;</span>
+            <button class="close" aria-label="Close">&times;</button>
             <h2 id="orgModalTitle"></h2>
             <p id="orgModalDesc"></p>
         </div>
     </div>
 
-    <footer>
-        <p>Connect with me:</p>
-        <a href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank"><i class="fa fa-linkedin"></i> LinkedIn</a>
-        <a href="mailto:afsanab620@gmail.com"><i class="fa fa-envelope"></i> Email</a>
-        <a href="https://github.com/afsanab"><i class="fa fa-github"></i> GitHub</a>
+    <!-- Footer / Contact -->
+    <footer id="contact" class="reveal">
+        <p>Connect with me</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank" rel="noopener"><i
+                    class="fa fa-linkedin"></i> LinkedIn</a>
+            <a href="mailto:afsanab620@gmail.com"><i class="fa fa-envelope"></i> Email</a>
+            <a href="https://github.com/afsanab" target="_blank" rel="noopener"><i class="fa fa-github"></i> GitHub</a>
+        </div>
     </footer>
 </body>
 

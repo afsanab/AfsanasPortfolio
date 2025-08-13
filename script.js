@@ -43,3 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+// Inside DOMContentLoaded
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+        document.getElementById('orgModal').style.display = 'none';
+    }
+});
+

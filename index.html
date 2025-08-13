@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Afsana Bhuiyan - Software Engineer and Data Analyst with expertise in AI, data visualization, and web development.">
+    <meta name="keywords"
+        content="Afsana Bhuiyan, Software Engineer, Data Analyst, AI, Data Visualization, Web Development, Portfolio">
     <title>Afsana Bhuiyan | Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,23 +18,23 @@
 <body>
     <nav>
         <div class="nav-container">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#organizations">Organizations</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" aria-label="About section">About</a>
+            <a href="#projects" aria-label="Projects section">Projects</a>
+            <a href="#organizations" aria-label="Organizations section">Organizations</a>
+            <a href="#contact" aria-label="Contact section">Contact</a>
         </div>
     </nav>
 
     <header>
         <h1 class="header-title">Afsana Bhuiyan</h1>
-        <a href="assets/Afsana_Bhuiyan_Resume.pdf" class="btn" download target="_blank">Resume</a>
-        <a href="https://github.com/afsanab" class="btn" target="_blank">GitHub</a>
-
+        <a href="assets/Afsana_Bhuiyan_Resume.pdf" class="btn" download target="_blank"
+            aria-label="Download Resume">Resume</a>
+        <a href="https://github.com/afsanab" class="btn" target="_blank" aria-label="Visit GitHub profile">GitHub</a>
     </header>
 
     <section id="about">
         <div class="about-container">
-            <img src="images/headshot.jpg" alt="Afsana Bhuiyan">
+            <img src="images/headshot.jpg" alt="Afsana Bhuiyan Headshot">
             <p>Hi, I’m Afsana, a software engineer and data analyst with a passion for solving problems with code. With
                 a background in AI, data visualization, and web development, I enjoy turning complex data into
                 actionable insights. I've developed projects in media, entertainment, and
@@ -58,12 +62,19 @@
                 <a href="https://genregalaxy.onrender.com/" target="_blank">Live Site</a>
             </div>
             <div class="project-card">
+                <img src="images/SpatialDashboard.png" alt="SpacialMarketingDashboard">
+                <h3>Spacial Marketing Dashboard</h3>
+                <p>A Tableau dashboard analyzing spatial marketing data.</p>
+                <a href="https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard?:language=en-US&:sid=&:redirect=auth&showOnboarding=true&:display_count=n&:origin=viz_share_link"
+                    target="_blank">Tableau Public</a>
+            </div>
+            <!-- <div class="project-card">
                 <img src="images/BinaryClassifier.png" alt="PosiText">
                 <h3>PosiText</h3>
                 <p>A binary classifier using NLP to identify happiness in text.</p>
                 <a href="https://github.com/afsanab/PosiText" target="_blank">GitHub</a>
             </div>
-            <!-- <div class="project-card">
+            <div class="project-card">
                 <img src="images/DormDetails.png" alt="SwiftDorms">
                 <h3>SwiftDorms</h3>
                 <p>An open-source website for off-campus housing and roommate matching.</p>
@@ -76,19 +87,18 @@
         <h2>Organizations</h2>
         <div class="organization-container">
             <div class="organization-card" data-title="Girls Who Code"
-                data-description="GWC Summer Immersion Program(SIP) alum, University club President, and Teaching Assistant/mentor for SIP.">
+                data-description="GWC Summer Immersion Program alum, past club President, and Teaching Assistant.">
                 <img src="images/gwc.png" alt="Girls Who Code">
             </div>
-            <div class="organization-card" data-title="COOP"
-                data-description="Data Analytics Fellow at COOP. Working on Tableau, SQL and Excel projects. ">
+            <div class="organization-card" data-title="COOP" data-description="Current Data Analytics Fellow at COOP.">
                 <img src="images/COOP.jpg" alt="COOP">
             </div>
             <div class="organization-card" data-title="CodePath"
-                data-description="Technical Interview Prep Student at CodePath. Collaborating with other students to work through technical problem solving.">
+                data-description="Technical Interview Prep Student at CodePath.">
                 <img src="images/codePath.jpg" alt="CodePath">
             </div>
             <div class="organization-card" data-title="Opal"
-                data-description="Post-grad mentee, developing professional skills and networking.">
+                data-description="Post-grad mentee, developing professional and leadership skills.">
                 <img src="images/opal.png" alt="Opal">
             </div>
             <div class="organization-card" data-title="OppNet"
@@ -116,7 +126,6 @@
         <a href="mailto:afsanab620@gmail.com"><i class="fa fa-envelope"></i> Email</a>
         <a href="https://github.com/afsanab"><i class="fa fa-github"></i> GitHub</a>
     </footer>
-
 </body>
 
 </html>

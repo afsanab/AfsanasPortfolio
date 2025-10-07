@@ -143,3 +143,10 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ---------- Subtle project hover (already in CSS, add lazy) ---------- */
     document.querySelectorAll("img").forEach((img) => (img.loading = "lazy"));
 });
+// ---------- Resume View Button ----------
+const resumeBtn = document.getElementById("viewResumeBtn");
+if (resumeBtn) {
+    resumeBtn.addEventListener("click", () => {
+        window.open("AfsanaBhuiyan_Resume.pdf", "_blank", "noopener");
+    });
+}

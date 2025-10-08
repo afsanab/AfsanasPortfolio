@@ -491,3 +491,50 @@ body.light {
         transform: translateY(-600px);
     }
 }
+
+.badge-domain {
+    background: color-mix(in lab, var(--accent) 25%, transparent);
+    color: var(--text);
+    font-weight: 600;
+}
+
+.badge-tools {
+    opacity: 0.85;
+}
+
+.badge.small {
+    font-size: 0.7rem;
+    padding: 3px 6px;
+}
+
+.chip {
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-weight: 600;
+    border: 1px solid color-mix(in lab, var(--accent) 30%, transparent);
+    background: color-mix(in lab, var(--accent) 12%, transparent);
+    color: var(--text);
+    transition: all 0.2s ease;
+}
+
+.chip:hover {
+    background: color-mix(in lab, var(--accent) 25%, transparent);
+    transform: translateY(-1px);
+}
+
+.chip.active {
+    background: var(--accent);
+    color: white;
+    border-color: transparent;
+}
+
+.project-card {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.project-card[style*="display: none"] {
+    opacity: 0;
+    transform: scale(0.98);
+}

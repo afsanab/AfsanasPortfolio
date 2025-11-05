@@ -1,3 +1,31 @@
+.header-title {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: 800;
+    color: var(--text);
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header-title::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--accent);
+    animation: blinkCursor 0.8s infinite;
+}
+
+@keyframes blinkCursor {
+    50% {
+        opacity: 0;
+    }
+}
+
+
 /* ============ THEME VARIABLES ============ */
 :root {
     --bg: #0b0f14;

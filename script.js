@@ -150,3 +150,18 @@ if (resumeBtn) {
         window.open("AfsanaBhuiyan_Resume.pdf", "_blank", "noopener");
     });
 }
+
+/* ---------- Typing Effect for Name ---------- */
+const nameText = "Afsana Bhuiyan";
+const typingEl = document.getElementById("typingName");
+let i = 0;
+
+function typeLetter() {
+    if (i < nameText.length) {
+        typingEl.textContent += nameText.charAt(i);
+        i++;
+        setTimeout(typeLetter, 120); // adjust speed here (lower = faster)
+    }
+}
+
+typeLetter();

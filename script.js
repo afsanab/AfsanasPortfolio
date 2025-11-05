@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("scroll", onScroll);
 
     /* ---------- Role Rotator in Hero ---------- */
-    const roles = ["Data Analyst", "Data Scientist", "Data Engineer"];
+    const roles = ["Software Engineer", "Data Analyst"];
     let r = 0;
     setInterval(() => {
         const el = document.getElementById("roleRotator");

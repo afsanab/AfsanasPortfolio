@@ -107,38 +107,47 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 
     /* ---------- Dark Mode Toggle (floating) ---------- */
+    /* ---------- Dark Mode Toggle (floating) ---------- */
     const saved = localStorage.getItem("theme");
     if (saved === "light") document.body.classList.add("light");
 
     function toggleTheme() {
         document.body.classList.toggle("light");
-        localStorage.setItem(
-            "theme",
-            document.body.classList.contains("light") ? "light" : "dark"
-        );
+        const lightMode = document.body.classList.contains("light");
+        localStorage.setItem("theme", lightMode ? "light" : "dark");
+        themeBtn.innerText = lightMode ? "☀️" : "🌙";
+        themeBtn.title = lightMode ? "Switch to Dark Mode" : "Switch to Light Mode";
     }
 
     const themeBtn = document.createElement("button");
     themeBtn.setAttribute("aria-label", "Toggle theme");
+    themeBtn.innerText = document.body.classList.contains("light") ? "☀️" : "🌙";
+    themeBtn.title = document.body.classList.contains("light")
+        ? "Switch to Dark Mode"
+        : "Switch to Light Mode";
+
     Object.assign(themeBtn.style, {
         position: "fixed",
-        right: "16px",
-        bottom: "16px",
-        zIndex: "60",
-        padding: "14px 18px",   // bigger padding
-        fontSize: "1.25rem",    // larger icon/text
+        right: "18px",
+        bottom: "18px",
+        zIndex: "100",
+        padding: "12px 14px",
+        fontSize: "1.4rem",
         borderRadius: "50%",
-        border: "2px solid rgba(255,255,255,.25)",
-        background: "rgba(0,0,0,0.6)",
-        backdropFilter: "blur(6px)",
+        border: "none",
+        background: "var(--accent)",
         color: "white",
         cursor: "pointer",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.4)",
+        boxShadow: "0 6px 18px rgba(0,0,0,0.4)",
+        transition: "transform 0.2s, background 0.3s",
     });
 
-    themeBtn.innerText = "☾";
+    themeBtn.onmouseenter = () => (themeBtn.style.transform = "scale(1.1)");
+    themeBtn.onmouseleave = () => (themeBtn.style.transform = "scale(1)");
     themeBtn.onclick = toggleTheme;
+
     document.body.appendChild(themeBtn);
+
 
     /* ---------- Subtle project hover (already in CSS, add lazy) ---------- */
     document.querySelectorAll("img").forEach((img) => (img.loading = "lazy"));

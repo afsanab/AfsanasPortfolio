@@ -365,6 +365,14 @@ nav a.active {
 }
 
 /* ============ MODAL ============ */
+button[aria-label="Toggle theme"] {
+    backdrop-filter: blur(8px);
+}
+
+button[aria-label="Toggle theme"]:hover {
+    filter: brightness(1.1);
+}
+
 .modal {
     display: none;
     position: fixed;

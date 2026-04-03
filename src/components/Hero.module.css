@@ -1,0 +1,107 @@
+.hero {
+  padding: 7rem 0 5.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  animation: fadeUp 0.6s ease 0.1s both;
+}
+
+.name {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 9vw, 6rem);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: -0.04em;
+  color: var(--text);
+  margin-bottom: 1.75rem;
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.name em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.desc {
+  max-width: 520px;
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  animation: fadeUp 0.6s ease 0.32s both;
+}
+
+.desc strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.tagline {
+  max-width: 520px;
+  font-size: 0.95rem;
+  color: var(--accent2);
+  font-style: italic;
+  font-family: var(--font-display);
+  margin-bottom: 2.5rem;
+  animation: fadeUp 0.6s ease 0.42s both;
+}
+
+.ctas {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.6s ease 0.52s both;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.4rem;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: all var(--transition);
+  font-family: var(--font-body);
+}
+
+.primary {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.primary:hover {
+  background: #a8411e;
+  border-color: #a8411e;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(193, 82, 42, 0.28);
+}
+
+.ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+.ghost:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}

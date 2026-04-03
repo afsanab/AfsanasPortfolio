@@ -1,0 +1,131 @@
+.section {
+  padding: 5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.sidebar {}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  filter: sepia(8%);
+}
+
+.photoFallback {
+  display: none;
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--accent-lt);
+  border-radius: var(--radius);
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+}
+
+.body p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-bottom: 1.1rem;
+}
+
+.body strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.personal {
+  font-style: italic;
+  font-family: var(--font-display);
+  font-size: 1.05rem !important;
+  color: var(--accent2) !important;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  margin-bottom: 1rem;
+}
+
+.label::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 400;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+
+.fact {
+  padding: 1rem 1.2rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.factLabel {
+  font-family: var(--font-mono);
+  font-size: 0.67rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+
+.factValue {
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+@media (max-width: 700px) {
+  .grid { grid-template-columns: 1fr; gap: 2rem; }
+  .photo, .photoFallback { aspect-ratio: 4/3; max-width: 260px; }
+  .facts { grid-template-columns: 1fr; }
+}

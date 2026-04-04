@@ -1,29 +1,22 @@
-README.md
-
-# Node modules
+# Dependencies
 node_modules/
 
 # Build output
 dist/
+dist-ssr/
 
-# Local environment variables
+# Environment variables
 .env
 .env.local
 .env.*.local
 
-# Log files
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# Vite cache
-.vite/
-
-# Dependency directories
-.pnp/
-.pnp.js
-
-# Editor directories and files
+# Editor
 .vscode/
 .idea/
 *.suo
@@ -32,12 +25,13 @@ yarn-error.log*
 *.sln
 *.sw?
 
-# Mac system files
+# OS
 .DS_Store
-
-# Windows system files
 Thumbs.db
-ehthumbs.db
 
-# Miscellaneous
-*.log
+# TypeScript
+*.tsbuildinfo
+
+# Cache
+.eslintcache
+.vite/

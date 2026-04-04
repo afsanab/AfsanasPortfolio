@@ -2,30 +2,29 @@ import { useEffect, useRef } from 'react'
 import styles from './About.module.css'
 
 const facts = [
-  { label: 'Currently', value: 'SWE Intern · Pieces' },
-  { label: 'Previously', value: 'SWE Intern · ISO New England' },
-  { label: 'Education', value: 'B.S. CS · RPI \'24' },
-  { label: 'Based in', value: 'New York City' },
+  { label: 'Currently',  value: 'Software Developer · Margin Research' },
+  { label: 'Status',     value: 'Open to junior SWE roles in NYC' },
+  { label: 'Education',  value: "B.S. Computer Science · RPI '24" },
+  { label: 'Based in',   value: 'New York City' },
 ]
 
 export default function About() {
-  const sectionRef = useRef<HTMLElement>(null)
+  const ref = useRef<HTMLElement>(null)
 
   useEffect(() => {
-    const el = sectionRef.current
-    if (!el) return
+    const el = ref.current; if (!el) return
     const items = el.querySelectorAll('.reveal')
-    const observer = new IntersectionObserver(
-      (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target) } }),
+    const obs = new IntersectionObserver(
+      (entries) => entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target) } }),
       { threshold: 0.08 }
     )
-    items.forEach((i) => observer.observe(i))
-    return () => observer.disconnect()
+    items.forEach((i) => obs.observe(i))
+    return () => obs.disconnect()
   }, [])
 
   return (
-    <section id="about" className={styles.section} ref={sectionRef}>
-      <div className={styles.container}>
+    <section id="about" className={`${styles.section} section-shell`} ref={ref}>
+      <div className="section-container">
         <div className={`${styles.grid} reveal`}>
           <div className={styles.sidebar}>
             <img
@@ -33,39 +32,35 @@ export default function About() {
               alt="Afsana Bhuiyan"
               className={styles.photo}
               onError={(e) => {
-                const target = e.currentTarget
-                target.style.display = 'none'
-                const next = target.nextElementSibling as HTMLElement
-                if (next) next.style.display = 'flex'
+                e.currentTarget.style.display = 'none';
+                (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex'
               }}
             />
-            <div className={styles.photoFallback}>📷</div>
+            <div className={styles.fallback}>👩‍💻</div>
           </div>
 
           <div className={styles.body}>
-            <span className={styles.label}>About</span>
-            <h2 className={styles.title}>
-              Builder by nature,<br />
-              <em>engineer by craft.</em>
+            <span className="section-label">About</span>
+            <h2 className={`section-title ${styles.title}`}>
+              Curious by nature.<br />
+              <em>Growing through code.</em>
             </h2>
 
             <p>
-              I'm a CS grad who chose the field because I love to{' '}
-              <strong>learn and build</strong> — and software is one of the best
-              mediums for both. I care about writing purposeful code that solves
-              real problems.
+              I'm currently a Software Developer at <strong>Margin Research</strong>, where I work on a
+              full-stack SaaS product in a small, fast-paced startup environment. Working on a small team
+              means I get real ownership — I've contributed across the stack, with a focus on
+              backend work including <strong>database design, API development, and unit testing</strong>.
             </p>
             <p>
-              My background spans full-stack development, data analytics, and
-              systems engineering. I've shipped production features at{' '}
-              <strong>Pieces</strong> (an AI-powered developer tools startup) and
-              built Java infrastructure at <strong>ISO New England</strong>, one of
-              the largest independent grid operators in the US.
+              Before this, I interned at <strong>Pieces</strong> (an AI developer tools startup) and
+              <strong> ISO New England</strong>, where I worked on Java infrastructure for the region's
+              electrical grid. Each role has pushed me to learn quickly, ask good questions, and ship
+              work I'm proud of.
             </p>
             <p className={styles.personal}>
-              Outside of work: currently reading whatever I can get my hands on,
-              always planning the next hike, and on a mission to find NYC's best
-              cortado. ☕
+              Outside of work: I'm usually reading, out on a trail somewhere, or on a mission to find
+              and rate every matcha in NYC. 🍵
             </p>
 
             <div className={styles.facts}>

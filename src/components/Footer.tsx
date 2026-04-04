@@ -5,30 +5,17 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.name}>Afsana Bhuiyan</div>
-        <p className={styles.sub}>
-          Software Engineer · Open to opportunities ✦
+        <p className={styles.tagline}>
+          Junior Software Engineer · Open to opportunities
         </p>
         <div className={styles.links}>
-          <a
-            className={styles.btn}
-            href="mailto:afsanab620@gmail.com"
-          >
-            <i className="fa fa-envelope" /> Email
+          <a className={styles.btn} href="mailto:afsanab620@gmail.com">
+            <i className="fa fa-envelope" /> afsanab620@gmail.com
           </a>
-          <a
-            className={styles.btn}
-            href="https://www.linkedin.com/in/afsanabhuiyan"
-            target="_blank"
-            rel="noopener"
-          >
+          <a className={styles.btn} href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank" rel="noopener">
             <i className="fa fa-linkedin" /> LinkedIn
           </a>
-          <a
-            className={styles.btn}
-            href="https://github.com/afsanab"
-            target="_blank"
-            rel="noopener"
-          >
+          <a className={styles.btn} href="https://github.com/afsanab" target="_blank" rel="noopener">
             <i className="fa fa-github" /> GitHub
           </a>
         </div>

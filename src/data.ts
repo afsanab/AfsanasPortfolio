@@ -3,6 +3,7 @@ export interface Experience {
   role: string
   company: string
   location: string
+  badge?: string
   bullets: string[]
 }
 
@@ -29,14 +30,26 @@ export interface Organization {
 
 export const experiences: Experience[] = [
   {
-    date: 'Sep 2025 – Present',
+    date: 'Mar 2026 – Present',
+    role: 'Software Developer',
+    company: 'Margin Research',
+    location: 'New York, NY',
+    badge: 'Current',
+    bullets: [
+      'Building features across a full-stack SaaS product in a small, fast-moving startup environment with real end-to-end ownership.',
+      'Backend-focused work: designing and querying databases, developing and maintaining REST APIs, and writing unit tests to ensure reliability.',
+      'Contributing to frontend development alongside backend responsibilities, collaborating closely with a small team to ship quickly and iterate.',
+    ],
+  },
+  {
+    date: 'Sep – Dec 2025',
     role: 'Software Engineer Intern',
-    company: 'Pieces',
+    company: 'Pieces for Developers',
     location: 'New York, NY',
     bullets: [
-      'Led full product lifecycle of a React + Flask feature — research, design, and implementation of synthetic patient record generation using Gemini API.',
-      'Built wireframes and ran user testing to improve data exploration flow, increasing engagement efficiency by 70%.',
-      'Optimized backend data formatting and API handling in Python to enhance reliability and scalability for future analytics pipelines.',
+      'Owned full product lifecycle of a React + Flask feature: scoped requirements, designed UI, and shipped synthetic patient-record generation backed by the Gemini API.',
+      'Improved data exploration flow by 70% (measured via user-testing sessions) by iterating on wireframes and refactoring frontend state management.',
+      'Hardened backend API reliability in Python/Flask — improved error handling and response formatting to support future analytics pipeline scale.',
     ],
   },
   {
@@ -45,8 +58,8 @@ export const experiences: Experience[] = [
     company: 'COOP Careers',
     location: 'New York, NY',
     bullets: [
-      'Applied Python (Pandas, NumPy) and SQL for data cleaning and quantitative research on real-world datasets.',
-      'Designed and presented interactive Tableau dashboards analyzing movie ROI and viewer engagement trends.',
+      'Cleaned and analyzed real-world datasets using Python (Pandas, NumPy) and SQL; surfaced insights that informed project recommendations.',
+      'Built and presented Tableau dashboards on movie ROI trends to a cohort of 20+ professionals.',
     ],
   },
   {
@@ -55,18 +68,18 @@ export const experiences: Experience[] = [
     company: 'ISO New England',
     location: 'Holyoke, MA',
     bullets: [
-      'Tested and optimized a Java-based Total Transfer Capability Calculator modeling power transfer across New England\'s grid — improved speed by 4%.',
-      'Built an automated reporting system (Java, Spring Boot, Apache Camel) replacing manual PL/SQL data extraction and email generation.',
-      'Presented both projects at a company-wide expo (100+ employees) and demoed new backend workflows to a 10-person dev team.',
+      'Optimized a Java-based Total Transfer Capability Calculator — the production tool that models power-transfer capacity across New England\'s electrical grid — achieving a 4% speed improvement via targeted JUnit testing and profiling.',
+      'Engineered an automated reporting pipeline (Java, Spring Boot, Apache Camel, Thymeleaf) that eliminated manual PL/SQL data extraction and HTML email generation.',
+      'Presented both projects at a company-wide expo (100+ attendees) and led a technical demo for a 10-person engineering team.',
     ],
   },
   {
     date: 'Jan – May 2023',
-    role: 'Teaching Assistant',
+    role: 'Teaching Assistant — Intro to CS',
     company: 'Rensselaer Polytechnic Institute',
     location: 'Troy, NY',
     bullets: [
-      'Supported 350+ students in core CS concepts through weekly office hours, exam reviews, and grading 100+ assignments weekly.',
+      'Held weekly office hours and ran exam prep sessions for 350+ students; graded 100+ assignments weekly with written feedback.',
     ],
   },
   {
@@ -75,7 +88,7 @@ export const experiences: Experience[] = [
     company: 'Girls Who Code',
     location: 'New York, NY',
     bullets: [
-      'Led virtual web development lessons (JavaScript, HTML, CSS) for 40+ high school students and mentored them through 4 full projects.',
+      'Taught web development (JavaScript, HTML/CSS) to 40+ high school students; mentored them through 4 end-to-end projects and career exploration.',
     ],
   },
 ]
@@ -84,7 +97,7 @@ export const projects: Project[] = [
   {
     icon: '📈',
     name: 'Sentivest',
-    desc: 'Real-time financial news and social sentiment aggregator with interactive visualizations. Integrates Gemini API for NLP-powered sentiment scoring.',
+    desc: 'Full-stack financial sentiment platform. Aggregates real-time news and social data, runs NLP scoring via Gemini API, and renders results as interactive dashboards. Built end-to-end at a hackathon.',
     tags: ['fullstack'],
     tech: ['React', 'Flask', 'Supabase', 'Gemini API', 'Tailwind'],
     links: [
@@ -95,9 +108,9 @@ export const projects: Project[] = [
   {
     icon: '📍',
     name: 'LinkUP',
-    desc: 'Finds the optimal meeting spot for groups of friends across NYC, factoring in everyone\'s public transit times. Uses LangChain for intelligent location reasoning.',
+    desc: 'Location-optimization app that finds the fairest meetup spot by analyzing public transit times for all users. React frontend with Google Maps integration, Node/Express backend, and LangChain reasoning layer.',
     tags: ['fullstack', 'ml'],
-    tech: ['React', 'Node.js', 'LangChain', 'Google Maps API'],
+    tech: ['React', 'Node.js', 'Express', 'LangChain', 'Google Maps API'],
     links: [
       { label: 'GitHub', url: 'https://github.com/tasmiachow/DivHacks' },
       { label: 'Live ↗', url: 'https://linkup-nyc-client.onrender.com/' },
@@ -106,7 +119,7 @@ export const projects: Project[] = [
   {
     icon: '✈️',
     name: 'JetGenie',
-    desc: 'AI-powered travel itinerary builder that generates personalized day-by-day plans. Backed by Groq API for fast inference.',
+    desc: 'AI travel planner that generates day-by-day itineraries from user preferences. React + Firebase frontend; Groq API for low-latency LLM inference.',
     tags: ['fullstack', 'ml'],
     tech: ['React', 'Firebase', 'Groq API'],
     links: [
@@ -117,9 +130,9 @@ export const projects: Project[] = [
   {
     icon: '🎬',
     name: 'MovieMate',
-    desc: 'Movie recommendation platform tailored to user preferences. Built end-to-end with a Python/Flask backend and responsive frontend.',
+    desc: 'Recommendation engine that suggests films based on user preferences and viewing history. Python/Flask backend with a lightweight frontend; deployed on Vercel.',
     tags: ['fullstack'],
-    tech: ['Python', 'Flask'],
+    tech: ['Python', 'Flask', 'Vercel'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/MovieMate' },
       { label: 'Live ↗', url: 'https://moviemate-virid.vercel.app/' },
@@ -128,7 +141,7 @@ export const projects: Project[] = [
   {
     icon: '🌌',
     name: 'Genre Galaxy',
-    desc: 'Interactive network graph mapping relationships between 100+ literary genres across 10,000+ Goodreads books.',
+    desc: 'Graph analysis pipeline over 10,000+ Goodreads books — builds a NetworkX co-occurrence graph across 100+ genres and renders it as an interactive Plotly visualization.',
     tags: ['viz'],
     tech: ['Python', 'Flask', 'NetworkX', 'Plotly'],
     links: [
@@ -139,62 +152,29 @@ export const projects: Project[] = [
   {
     icon: '🗺️',
     name: 'Spatial Marketing Dashboard',
-    desc: 'Tableau dashboard analyzing KPI trends across U.S. states, surfacing regional performance patterns from raw marketing data.',
+    desc: 'Tableau dashboard analyzing U.S. state-level marketing KPIs — surfaces regional performance patterns and trend anomalies from raw SQL data.',
     tags: ['analytics', 'viz'],
     tech: ['Tableau', 'SQL'],
     links: [
-      {
-        label: 'Tableau ↗',
-        url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard',
-      },
+      { label: 'Tableau ↗', url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard' },
     ],
   },
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { category: 'Frontend', items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
-  { category: 'Backend', items: ['Node.js', 'Flask', 'Python', 'Java', 'REST APIs'] },
-  { category: 'Data & SQL', items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Firebase'] },
-  { category: 'ML & AI', items: ['scikit-learn', 'LangChain', 'Gemini API', 'OpenAI API', 'Groq'] },
-  { category: 'Visualization', items: ['Tableau', 'Plotly', 'Seaborn', 'Matplotlib'] },
-  { category: 'Workflow', items: ['Git', 'GitHub', 'VS Code', 'Linux', 'Jupyter'] },
+  { category: 'Frontend',       items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
+  { category: 'Backend',        items: ['Node.js', 'Flask', 'Python', 'Java', 'Spring Boot', 'REST APIs'] },
+  { category: 'Data & SQL',     items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Firebase'] },
+  { category: 'ML & AI APIs',   items: ['LangChain', 'Gemini API', 'OpenAI API', 'Groq', 'scikit-learn'] },
+  { category: 'Visualization',  items: ['Tableau', 'Plotly', 'Seaborn', 'Matplotlib'] },
+  { category: 'Workflow',       items: ['Git', 'GitHub', 'Linux', 'VS Code', 'Jupyter', 'JUnit'] },
 ]
 
 export const organizations: Organization[] = [
-  {
-    name: 'Girls Who Code',
-    img: 'images/gwc.png',
-    fallbackEmoji: '💻',
-    description: 'GWC Summer Immersion Program alum, past club President, and Teaching Assistant.',
-  },
-  {
-    name: 'COOP Careers',
-    img: 'images/COOP.jpg',
-    fallbackEmoji: '🚀',
-    description: 'Data Analytics Fellow — building professional skills and a peer network in tech.',
-  },
-  {
-    name: 'CodePath',
-    img: 'images/codePath.jpg',
-    fallbackEmoji: '⌨️',
-    description: 'Technical Interview Prep participant, sharpening algorithmic problem-solving and system design skills.',
-  },
-  {
-    name: 'Opal',
-    img: 'images/opal.png',
-    fallbackEmoji: '💎',
-    description: 'Post-grad mentee developing professional leadership and career navigation skills.',
-  },
-  {
-    name: 'OppNet',
-    img: 'images/oppnet.jpg',
-    fallbackEmoji: '🌐',
-    description: 'Prep Program participant, learning professional skills and expanding my network in tech.',
-  },
-  {
-    name: 'America on Tech',
-    img: 'images/aot.jpeg',
-    fallbackEmoji: '🇺🇸',
-    description: 'Tech 360 Program participant, building technical skills through hands-on real-world projects.',
-  },
+  { name: 'Girls Who Code',   img: 'images/gwc.png',      fallbackEmoji: '💻', description: 'GWC Summer Immersion Program alum, past club President, and Teaching Assistant — introduced 40+ students to software engineering.' },
+  { name: 'COOP Careers',     img: 'images/COOP.jpg',     fallbackEmoji: '🚀', description: 'Data Analytics Fellow — applied Python and SQL to real-world datasets and developed data storytelling skills.' },
+  { name: 'CodePath',         img: 'images/codePath.jpg', fallbackEmoji: '⌨️', description: 'Technical Interview Prep participant, focused on algorithms, data structures, and system design.' },
+  { name: 'Opal',             img: 'images/opal.png',     fallbackEmoji: '💎', description: 'Post-grad mentee building professional leadership and career strategy skills.' },
+  { name: 'OppNet',           img: 'images/oppnet.jpg',   fallbackEmoji: '🌐', description: 'Prep Program participant focused on professional skills and tech-industry networking.' },
+  { name: 'America on Tech',  img: 'images/aot.jpeg',     fallbackEmoji: '🇺🇸', description: 'Tech 360 Program participant — expanded technical skills through hands-on project work.' },
 ]

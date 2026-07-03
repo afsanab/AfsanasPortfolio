@@ -47,8 +47,15 @@
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 4px #4CAF7D; }
-  50%       { box-shadow: 0 0 10px #4CAF7D; }
+
+  0%,
+  100% {
+    box-shadow: 0 0 4px #4CAF7D;
+  }
+
+  50% {
+    box-shadow: 0 0 10px #4CAF7D;
+  }
 }
 
 .name {
@@ -74,7 +81,8 @@
   letter-spacing: -0.01em;
 }
 
-.roleText { }
+.roleText {}
+
 .roleCursor {
   color: var(--wine);
   animation: blink 0.8s step-end infinite;
@@ -130,12 +138,15 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   opacity: 0;
   transition: opacity 0.2s;
 }
 
-.primary:hover::after { opacity: 1; }
+.primary:hover::after {
+  opacity: 1;
+}
+
 .primary:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 22px var(--accent-glow);

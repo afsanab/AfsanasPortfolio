@@ -10,6 +10,14 @@ dist-ssr/
 .env.local
 .env.*.local
 
+# SSH keys
+github_ssh_key
+github_ssh_key.pub
+*_ssh_key
+*_ssh_key.pub
+id_rsa
+id_rsa.pub
+
 # Logs
 npm-debug.log*
 yarn-debug.log*

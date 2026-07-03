@@ -162,19 +162,19 @@ export const projects: Project[] = [
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { category: 'Frontend',       items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
-  { category: 'Backend',        items: ['Node.js', 'Flask', 'Python', 'Java', 'Spring Boot', 'REST APIs'] },
-  { category: 'Data & SQL',     items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Firebase'] },
-  { category: 'ML & AI APIs',   items: ['LangChain', 'Gemini API', 'OpenAI API', 'Groq', 'scikit-learn'] },
-  { category: 'Visualization',  items: ['Tableau', 'Plotly', 'Seaborn', 'Matplotlib'] },
-  { category: 'Workflow',       items: ['Git', 'GitHub', 'Linux', 'VS Code', 'Jupyter', 'JUnit'] },
+  { category: 'Frontend', items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
+  { category: 'Backend', items: ['Node.js', 'Flask', 'Python', 'Java', 'Spring Boot', 'REST APIs'] },
+  { category: 'Data & SQL', items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Firebase'] },
+  { category: 'ML & AI APIs', items: ['LangChain', 'Gemini API', 'OpenAI API', 'Groq', 'scikit-learn'] },
+  { category: 'Visualization', items: ['Tableau', 'Plotly', 'Seaborn', 'Matplotlib'] },
+  { category: 'Workflow', items: ['Git', 'GitHub', 'Linux', 'VS Code', 'Jupyter', 'JUnit'] },
 ]
 
 export const organizations: Organization[] = [
-  { name: 'Girls Who Code',   img: 'images/gwc.png',      fallbackEmoji: '💻', description: 'GWC Summer Immersion Program alum, past club President, and Teaching Assistant — introduced 40+ students to software engineering.' },
-  { name: 'COOP Careers',     img: 'images/COOP.jpg',     fallbackEmoji: '🚀', description: 'Data Analytics Fellow — applied Python and SQL to real-world datasets and developed data storytelling skills.' },
-  { name: 'CodePath',         img: 'images/codePath.jpg', fallbackEmoji: '⌨️', description: 'Technical Interview Prep participant, focused on algorithms, data structures, and system design.' },
-  { name: 'Opal',             img: 'images/opal.png',     fallbackEmoji: '💎', description: 'Post-grad mentee building professional leadership and career strategy skills.' },
-  { name: 'OppNet',           img: 'images/oppnet.jpg',   fallbackEmoji: '🌐', description: 'Prep Program participant focused on professional skills and tech-industry networking.' },
-  { name: 'America on Tech',  img: 'images/aot.jpeg',     fallbackEmoji: '🇺🇸', description: 'Tech 360 Program participant — expanded technical skills through hands-on project work.' },
+  { name: 'Girls Who Code', img: 'images/gwc.png', fallbackEmoji: '💻', description: 'GWC Summer Immersion Program alum, past club President, and Teaching Assistant — introduced 40+ students to software engineering.' },
+  { name: 'COOP Careers', img: 'images/COOP.jpg', fallbackEmoji: '🚀', description: 'Data Analytics Fellow — applied Python and SQL to real-world datasets and developed data storytelling skills.' },
+  { name: 'CodePath', img: 'images/codePath.jpg', fallbackEmoji: '⌨️', description: 'Technical Interview Prep participant, focused on algorithms, data structures, and system design.' },
+  { name: 'Opal', img: 'images/opal.png', fallbackEmoji: '💎', description: 'Post-grad mentee building professional leadership and career strategy skills.' },
+  { name: 'OppNet', img: 'images/oppnet.jpg', fallbackEmoji: '🌐', description: 'Prep Program participant focused on professional skills and tech-industry networking.' },
+  { name: 'America on Tech', img: 'images/aot.jpeg', fallbackEmoji: '🇺🇸', description: 'Tech 360 Program participant — expanded technical skills through hands-on project work.' },
 ]

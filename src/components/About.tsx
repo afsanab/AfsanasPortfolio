@@ -2,10 +2,10 @@ import { useEffect, useRef } from 'react'
 import styles from './About.module.css'
 
 const facts = [
-  { label: 'Currently',  value: 'Software Developer · Margin Research' },
-  { label: 'Status',     value: 'Open to junior SWE roles in NYC' },
-  { label: 'Education',  value: "B.S. Computer Science · RPI '24" },
-  { label: 'Based in',   value: 'New York City' },
+  { label: 'Currently', value: 'Software Developer · Margin Research' },
+  { label: 'Status', value: 'Open to junior SWE roles in NYC' },
+  { label: 'Education', value: "B.S. Computer Science · RPI '24" },
+  { label: 'Based in', value: 'New York City' },
 ]
 
 export default function About() {

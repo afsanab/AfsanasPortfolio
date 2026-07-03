@@ -50,8 +50,6 @@ Edit CSS variables in `src/index.css`:
 All portfolio content (experience, projects, skills, organizations) lives in `src/data.ts`.
 Edit that file to update anything without touching component code.
 
-### Resume
-Place your resume PDF at `public/AfsanaBhuiyan_Resume.pdf`.
 
 ### Headshot + Org logos
 Place images in `public/images/`:

@@ -6,7 +6,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.name}>Afsana Bhuiyan</div>
         <p className={styles.tagline}>
-          Junior Software Engineer · Open to opportunities
+          Software Engineer · New York City
         </p>
         <div className={styles.links}>
           <a className={styles.btn} href="mailto:afsanab620@gmail.com">

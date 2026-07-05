@@ -3,7 +3,7 @@ import styles from './About.module.css'
 
 const facts = [
   { label: 'Currently', value: 'Software Engineer · Margin Research' },
-  { label: 'Status', value: 'Open to junior SWE roles in NYC' },
+  { label: 'Focus', value: 'Backend & full-stack engineering' },
   { label: 'Education', value: "B.S. Computer Science · RPI '24" },
   { label: 'Based in', value: 'New York City' },
 ]

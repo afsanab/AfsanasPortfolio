@@ -55,24 +55,6 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    date: 'Jan – Jun 2025',
-    role: 'Data Analytics Fellow',
-    company: 'COOP Careers',
-    location: 'New York, NY',
-    bullets: [
-      'Built an interactive Tableau dashboard analyzing digital ad-campaign performance (CPC, CPM, CPA, CTR, CVR) across U.S. states and device types, ranking top and bottom markets and flagging states that met CPA efficiency targets to guide ad-spend allocation.',
-      'Cleaned and analyzed a 508-movie box-office dataset using Python (pandas/NumPy), engineering profit metrics and Tableau visualizations that showed franchise presence and genre were the strongest drivers of profitability.',
-      'Presented findings and strategic recommendations to a 500+ person audience.',
-    ],
-  },
-  {
-    date: 'Sep 2024 – Jun 2025',
-    role: 'Substitute Teacher',
-    company: 'NYC Board of Education',
-    location: 'New York, NY',
-    bullets: [],
-  },
-  {
     date: 'Jun – Dec 2023',
     role: 'Software Engineer Intern',
     company: 'ISO New England',
@@ -80,15 +62,6 @@ export const experiences: Experience[] = [
     bullets: [
       'Built an automated reporting pipeline (Java, Spring Boot, Apache Camel, Thymeleaf) that queries PL/SQL databases and emails the team scheduled dashboards of daily power-pricing data.',
       'Wrote a JUnit test suite for the Total Transfer Capability Calculator — a Java tool that models how much power can be transferred across New England\'s grid at projected future intervals — validating correctness of a domain-complex calculation engine.',
-    ],
-  },
-  {
-    date: '2020 – 2024',
-    role: 'Teaching Assistant & GWC Club President',
-    company: 'Rensselaer Polytechnic Institute',
-    location: 'Troy, NY',
-    bullets: [
-      'Served as a Discrete Mathematics Teaching Assistant and President of the Girls Who Code club, mentoring students and running technical programming.',
     ],
   },
 ]
@@ -171,8 +144,8 @@ export const skillGroups: SkillGroup[] = [
 ]
 
 export const organizations: Organization[] = [
-  { name: 'Girls Who Code', img: 'images/gwc.png', fallbackEmoji: '💻', description: 'GWC Summer Immersion Program alum, past club President, and Teaching Assistant — introduced 40+ students to software engineering.' },
-  { name: 'COOP Careers', img: 'images/COOP.jpg', fallbackEmoji: '🚀', description: 'Data Analytics Fellow — applied Python and SQL to real-world datasets and developed data storytelling skills.' },
+  { name: 'Girls Who Code', img: 'images/gwc.png', fallbackEmoji: '💻', description: 'Summer Immersion Program alum, club President, and Discrete Mathematics TA at RPI — introduced 40+ students to software engineering.' },
+  { name: 'COOP Careers', img: 'images/COOP.jpg', fallbackEmoji: '🚀', description: 'Data Analytics Fellow — built dashboards and analyzed datasets using Python, SQL, and Tableau; presented to a 500+ person audience.' },
   { name: 'CodePath', img: 'images/codePath.jpg', fallbackEmoji: '⌨️', description: 'Technical Interview Prep participant, focused on algorithms, data structures, and system design.' },
   { name: 'Opal', img: 'images/opal.png', fallbackEmoji: '💎', description: 'Post-grad mentee building professional leadership and career strategy skills.' },
   { name: 'OppNet', img: 'images/oppnet.jpg', fallbackEmoji: '🌐', description: 'Prep Program participant focused on professional skills and tech-industry networking.' },

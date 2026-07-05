@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import styles from './About.module.css'
 
 const facts = [
-  { label: 'Currently', value: 'Software Developer · Margin Research' },
+  { label: 'Currently', value: 'Software Engineer · Margin Research' },
   { label: 'Status', value: 'Open to junior SWE roles in NYC' },
   { label: 'Education', value: "B.S. Computer Science · RPI '24" },
   { label: 'Based in', value: 'New York City' },
@@ -47,10 +47,11 @@ export default function About() {
             </h2>
 
             <p>
-              I'm currently a Software Developer at <strong>Margin Research</strong>, where I work on a
-              full-stack SaaS product in a small, fast-paced startup environment. Working on a small team
-              means I get real ownership — I've contributed across the stack, with a focus on
-              backend work including <strong>database design, API development, and unit testing</strong>.
+              I'm currently a Software Engineer at <strong>Margin Research</strong>, where I took
+              <strong> Reagent</strong> — a SaaS code-analysis platform — from prototype to a deployed v1
+              for U.S. government customers. I built its <strong>FastAPI</strong> backend and
+              <strong> React</strong> frontend from scratch, plus a Celery-based analysis pipeline backed
+              by Redis/Valkey and Elasticsearch.
             </p>
             <p>
               Before this, I interned at <strong>Pieces</strong> (an AI developer tools startup) and

@@ -30,37 +30,47 @@ export interface Organization {
 
 export const experiences: Experience[] = [
   {
-    date: 'Mar 2026 – Present',
-    role: 'Software Developer',
+    date: 'Feb 2026 – Present',
+    role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
     badge: 'Current',
     bullets: [
-      'Building features across a full-stack SaaS product in a small, fast-moving startup environment with real end-to-end ownership.',
-      'Backend-focused work: designing and querying databases, developing and maintaining REST APIs, and writing unit tests to ensure reliability.',
-      'Contributing to frontend development alongside backend responsibilities, collaborating closely with a small team to ship quickly and iterate.',
+      'Took Reagent — a SaaS code-analysis platform with graph-based threat detection for open-source software — from prototype to deployed v1 in 3 months for U.S. government customers, building its FastAPI service layer and React frontend from scratch.',
+      'Designed and built a Celery-based orchestrator coordinating a five-stage analysis pipeline, using Redis/Valkey for task queuing and Elasticsearch to index and search graph analysis results.',
+      'Built a reusable TypeScript graph-visualization tool that ingests NetworkX and JSON graphs, auto-detects node and relationship types, and surfaces per-node analytics including centrality and community detection — adopted across 2 internal projects.',
+      'Containerized platform services with Docker and authored pytest suites covering the orchestrator\'s task routing and failure handling, deploying through the team\'s CI/CD pipeline.',
     ],
   },
   {
     date: 'Sep – Dec 2025',
     role: 'Software Engineer Intern',
-    company: 'Pieces for Developers',
+    company: 'Pieces',
     location: 'New York, NY',
     bullets: [
-      'Owned full product lifecycle of a React + Flask feature: scoped requirements, designed UI, and shipped synthetic patient-record generation backed by the Gemini API.',
-      'Improved data exploration flow by 70% (measured via user-testing sessions) by iterating on wireframes and refactoring frontend state management.',
-      'Hardened backend API reliability in Python/Flask — improved error handling and response formatting to support future analytics pipeline scale.',
+      'Built a full-stack synthetic patient-record generator (Flask REST API + JavaScript frontend) using the Gemini API to produce realistic EHR data for training and testing the company\'s AI document-summarization product.',
+      'Designed the nested JSON schema for longitudinal patient records — demographics, conditions, and 4–6 encounters with vitals, labs, and separate nurse/provider note streams — validating clinical realism with two physician consultants.',
+      'Engineered prompt specifications and a self-healing parsing pipeline that detects malformed LLM JSON output and auto-repairs it via a secondary repair prompt before re-validation, enabling reliable generation of 200+ clinician-note entries per patient.',
+      'Implemented user-configurable batch generation and a JSON export feature for downstream model training, with an interactive timeline UI featuring collapsible encounter views.',
     ],
   },
   {
-    date: 'Feb – Jun 2025',
+    date: 'Jan – Jun 2025',
     role: 'Data Analytics Fellow',
     company: 'COOP Careers',
     location: 'New York, NY',
     bullets: [
-      'Cleaned and analyzed real-world datasets using Python (Pandas, NumPy) and SQL; surfaced insights that informed project recommendations.',
-      'Built and presented Tableau dashboards on movie ROI trends to a cohort of 20+ professionals.',
+      'Built an interactive Tableau dashboard analyzing digital ad-campaign performance (CPC, CPM, CPA, CTR, CVR) across U.S. states and device types, ranking top and bottom markets and flagging states that met CPA efficiency targets to guide ad-spend allocation.',
+      'Cleaned and analyzed a 508-movie box-office dataset using Python (pandas/NumPy), engineering profit metrics and Tableau visualizations that showed franchise presence and genre were the strongest drivers of profitability.',
+      'Presented findings and strategic recommendations to a 500+ person audience.',
     ],
+  },
+  {
+    date: 'Sep 2024 – Jun 2025',
+    role: 'Substitute Teacher',
+    company: 'NYC Board of Education',
+    location: 'New York, NY',
+    bullets: [],
   },
   {
     date: 'Jun – Dec 2023',
@@ -68,27 +78,17 @@ export const experiences: Experience[] = [
     company: 'ISO New England',
     location: 'Holyoke, MA',
     bullets: [
-      'Optimized a Java-based Total Transfer Capability Calculator — the production tool that models power-transfer capacity across New England\'s electrical grid — achieving a 4% speed improvement via targeted JUnit testing and profiling.',
-      'Engineered an automated reporting pipeline (Java, Spring Boot, Apache Camel, Thymeleaf) that eliminated manual PL/SQL data extraction and HTML email generation.',
-      'Presented both projects at a company-wide expo (100+ attendees) and led a technical demo for a 10-person engineering team.',
+      'Built an automated reporting pipeline (Java, Spring Boot, Apache Camel, Thymeleaf) that queries PL/SQL databases and emails the team scheduled dashboards of daily power-pricing data.',
+      'Wrote a JUnit test suite for the Total Transfer Capability Calculator — a Java tool that models how much power can be transferred across New England\'s grid at projected future intervals — validating correctness of a domain-complex calculation engine.',
     ],
   },
   {
-    date: 'Jan – May 2023',
-    role: 'Teaching Assistant — Intro to CS',
+    date: '2020 – 2024',
+    role: 'Teaching Assistant & GWC Club President',
     company: 'Rensselaer Polytechnic Institute',
     location: 'Troy, NY',
     bullets: [
-      'Held weekly office hours and ran exam prep sessions for 350+ students; graded 100+ assignments weekly with written feedback.',
-    ],
-  },
-  {
-    date: 'Jun – Aug 2022',
-    role: 'Teaching Assistant',
-    company: 'Girls Who Code',
-    location: 'New York, NY',
-    bullets: [
-      'Taught web development (JavaScript, HTML/CSS) to 40+ high school students; mentored them through 4 end-to-end projects and career exploration.',
+      'Served as a Discrete Mathematics Teaching Assistant and President of the Girls Who Code club, mentoring students and running technical programming.',
     ],
   },
 ]
@@ -162,12 +162,12 @@ export const projects: Project[] = [
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { category: 'Frontend', items: ['React', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind'] },
-  { category: 'Backend', items: ['Node.js', 'Flask', 'Python', 'Java', 'Spring Boot', 'REST APIs'] },
-  { category: 'Data & SQL', items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Firebase'] },
-  { category: 'ML & AI APIs', items: ['LangChain', 'Gemini API', 'OpenAI API', 'Groq', 'scikit-learn'] },
-  { category: 'Visualization', items: ['Tableau', 'Plotly', 'Seaborn', 'Matplotlib'] },
-  { category: 'Workflow', items: ['Git', 'GitHub', 'Linux', 'VS Code', 'Jupyter', 'JUnit'] },
+  { category: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'C++'] },
+  { category: 'Frontend', items: ['React', 'HTML/CSS', 'Tailwind'] },
+  { category: 'Backend', items: ['Node.js', 'Express', 'Flask', 'FastAPI', 'Spring Boot', 'REST APIs'] },
+  { category: 'Infrastructure & Tools', items: ['Docker', 'Celery', 'Redis/Valkey', 'Elasticsearch', 'Pytest', 'JUnit', 'Git', 'Linux'] },
+  { category: 'Data & Databases', items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Tableau', 'Excel'] },
+  { category: 'AI & Visualization', items: ['Gemini API', 'LangChain', 'Groq', 'NetworkX', 'Plotly'] },
 ]
 
 export const organizations: Organization[] = [

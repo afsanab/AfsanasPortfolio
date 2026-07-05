@@ -47,14 +47,14 @@ export default function Hero() {
         </p>
 
         <p className={styles.desc}>
-          Junior Software Developer at <strong>Margin Research</strong>. I enjoy building
+          Software Engineer at <strong>Margin Research</strong>. I enjoy building
           software and solving problems that help me grow as a programmer.
         </p>
 
         <div className={styles.ctas}>
           <button
             className={`${styles.btn} ${styles.primary}`}
-            onClick={() => window.open('AfsanaBhuiyan_Resume.pdf', '_blank')}
+            onClick={() => window.open('AfsanaBhuiyanResume_SWE.pdf', '_blank')}
           >
             <i className="fa fa-file-text-o" /> View Resume
           </button>

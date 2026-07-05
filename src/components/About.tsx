@@ -42,8 +42,8 @@ export default function About() {
           <div className={styles.body}>
             <span className="section-label">About</span>
             <h2 className={`section-title ${styles.title}`}>
-              Curious by nature.<br />
-              <em>Growing through code.</em>
+              Building impactful products.<br />
+              <em>Driven to deliver exceptional software, end to end.</em>
             </h2>
 
             <p>
@@ -54,10 +54,12 @@ export default function About() {
               by Redis/Valkey and Elasticsearch.
             </p>
             <p>
-              Before this, I interned at <strong>Pieces</strong> (an AI developer tools startup) and
-              <strong> ISO New England</strong>, where I worked on Java infrastructure for the region's
-              electrical grid. Each role has pushed me to learn quickly, ask good questions, and ship
-              work I'm proud of.
+              Before this, I interned at <strong>Pieces</strong>, where I built a Flask API with a
+              self-healing JSON parsing pipeline, and at <strong>ISO New England</strong>, where I
+              wrote Java reporting infrastructure and test suites for the region's electrical grid.
+              I got my start through <strong>Girls Who Code</strong>, and went on to lead our GWC
+              chapter and TA discrete math at RPI — introducing 40+ students to engineering along
+              the way.
             </p>
             <p className={styles.personal}>
               Outside of work: I'm usually reading, out on a trail somewhere, or on a mission to find

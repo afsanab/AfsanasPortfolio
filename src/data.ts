@@ -135,19 +135,15 @@ export const projects: Project[] = [
 ]
 
 export const skillGroups: SkillGroup[] = [
-  { category: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'C++'] },
+  { category: 'Languages', items: ['Python', 'JavaScript', 'TypeScript', 'Java', 'SQL'] },
   { category: 'Frontend', items: ['React', 'HTML/CSS', 'Tailwind'] },
   { category: 'Backend', items: ['Node.js', 'Express', 'Flask', 'FastAPI', 'Spring Boot', 'REST APIs'] },
   { category: 'Infrastructure & Tools', items: ['Docker', 'Celery', 'Redis/Valkey', 'Elasticsearch', 'Pytest', 'JUnit', 'Git', 'Linux'] },
-  { category: 'Data & Databases', items: ['PostgreSQL', 'Supabase', 'Pandas', 'NumPy', 'Tableau', 'Excel'] },
-  { category: 'AI & Visualization', items: ['Gemini API', 'LangChain', 'Groq', 'NetworkX', 'Plotly'] },
+  { category: 'Data & Databases', items: ['PostgreSQL', 'Supabase'] },
+  { category: 'AI & Visualization', items: ['Gemini API', 'LangChain', 'Groq', 'NetworkX'] },
 ]
 
 export const organizations: Organization[] = [
   { name: 'Girls Who Code', img: 'images/gwc.png', fallbackEmoji: '💻', description: 'Summer Immersion Program alum, club President, and Discrete Mathematics TA at RPI — introduced 40+ students to software engineering.' },
   { name: 'COOP Careers', img: 'images/COOP.jpg', fallbackEmoji: '🚀', description: 'Data Analytics Fellow — built dashboards and analyzed datasets using Python, SQL, and Tableau; presented to a 500+ person audience.' },
-  { name: 'CodePath', img: 'images/codePath.jpg', fallbackEmoji: '⌨️', description: 'Technical Interview Prep participant, focused on algorithms, data structures, and system design.' },
-  { name: 'Opal', img: 'images/opal.png', fallbackEmoji: '💎', description: 'Post-grad mentee building professional leadership and career strategy skills.' },
-  { name: 'OppNet', img: 'images/oppnet.jpg', fallbackEmoji: '🌐', description: 'Prep Program participant focused on professional skills and tech-industry networking.' },
-  { name: 'America on Tech', img: 'images/aot.jpeg', fallbackEmoji: '🇺🇸', description: 'Tech 360 Program participant — expanded technical skills through hands-on project work.' },
 ]

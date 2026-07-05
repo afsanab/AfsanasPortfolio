@@ -15,8 +15,8 @@ export default function Hero() {
         <p className={styles.role}>Software Engineer</p>
 
         <p className={styles.desc}>
-          Software Engineer at <strong>Margin Research</strong>. I enjoy building
-          software and solving problems that help me grow as a programmer.
+          I build backend systems and data pipelines that take products from
+          prototype to production.
         </p>
 
         <div className={styles.ctas}>

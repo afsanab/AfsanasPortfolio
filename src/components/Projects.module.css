@@ -18,8 +18,17 @@
   font-family: var(--font-body);
   letter-spacing: 0.02em;
 }
-.chip:hover { border-color: var(--accent); color: var(--accent); }
-.active { background: var(--accent) !important; border-color: var(--accent) !important; color: white !important; }
+
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.active {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: white !important;
+}
 
 .grid {
   display: grid;
@@ -44,38 +53,35 @@
 .card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
+  top: 0;
+  left: 0;
   width: 2px;
   height: 0;
   background: linear-gradient(to bottom, var(--accent), var(--wine));
   transition: height 0.3s ease;
 }
-.card:hover::before { height: 100%; }
-.card:hover { background: var(--bg2); }
+
+.card:hover::before {
+  height: 100%;
+}
+
+.card:hover {
+  background: var(--bg2);
+}
 
 .cardTop {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
 }
 
-.icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--accent-lt);
-  border: 1px solid var(--border);
+.links {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.15rem;
-  flex-shrink: 0;
-  transition: transform 0.2s;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
-.card:hover .icon { transform: scale(1.08); }
-
-.links { display: flex; gap: 0.4rem; flex-wrap: wrap; justify-content: flex-end; }
 
 .link {
   font-size: 0.73rem;
@@ -87,7 +93,11 @@
   transition: all var(--transition);
   white-space: nowrap;
 }
-.link:hover { color: var(--accent); border-color: var(--accent); }
+
+.link:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
 
 .name {
   font-family: var(--font-display);
@@ -104,7 +114,11 @@
   flex: 1;
 }
 
-.tags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
 
 .tag {
   font-family: var(--font-mono);
@@ -117,6 +131,13 @@
   letter-spacing: 0.04em;
   transition: background var(--transition), color var(--transition);
 }
-.card:hover .tag { background: var(--bg); }
 
-@media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+.card:hover .tag {
+  background: var(--bg);
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

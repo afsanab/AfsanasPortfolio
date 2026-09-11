@@ -36,10 +36,6 @@ export default function About() {
 
           <div className={styles.body}>
             <span className="section-label">About</span>
-            <h2 className={`section-title ${styles.title}`}>
-              Building impactful products.<br />
-              <em>Driven to deliver exceptional software, end to end.</em>
-            </h2>
             <p>
               I'm a fullstack engineer with a focus on backend development. I'm driven by curiosity, problem-solving, and the challenge of
               turning ambiguous problems into practical software.

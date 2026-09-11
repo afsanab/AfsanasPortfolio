@@ -31,9 +31,7 @@ export default function Community() {
         <div className={`${styles.grid} reveal`}>
           {organizations.map((org) => (
             <button key={org.name} className={styles.card} onClick={() => setSelected(org)}>
-              <img src={org.img} alt={org.name} className={styles.logo}
-                onError={(e) => { e.currentTarget.style.display = 'none'; (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex' }} />
-              <span className={styles.fallback}>{org.fallbackEmoji}</span>
+              <img src={org.img} alt={org.name} className={styles.logo} />
               <span className={styles.name}>{org.name}</span>
             </button>
           ))}

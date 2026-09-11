@@ -49,7 +49,6 @@ export default function Projects() {
           {visible.map((p) => (
             <div className={styles.card} key={p.name}>
               <div className={styles.cardTop}>
-                <div className={styles.icon}>{p.icon}</div>
                 <div className={styles.links}>
                   {p.links.map(({ label, url }) => (
                     <a key={label} className={styles.link} href={url} target="_blank" rel="noopener">{label}</a>

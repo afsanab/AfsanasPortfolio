@@ -8,7 +8,6 @@ export interface Experience {
 }
 
 export interface Project {
-  icon: string
   name: string
   desc: string
   tags: string[]
@@ -25,7 +24,6 @@ export interface Organization {
   name: string
   img: string
   description: string
-  fallbackEmoji: string
 }
 
 export const experiences: Experience[] = [
@@ -68,7 +66,6 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
   {
-    icon: '📈',
     name: 'Sentivest',
     desc: 'Full-stack financial sentiment platform. Aggregates real-time news and social data, runs NLP scoring via Gemini API, and renders results as interactive dashboards. Built end-to-end at a hackathon.',
     tags: ['fullstack'],
@@ -79,7 +76,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    icon: '📍',
     name: 'LinkUP',
     desc: 'Location-optimization app that finds the fairest meetup spot by analyzing public transit times for all users. React frontend with Google Maps integration, Node/Express backend, and LangChain reasoning layer.',
     tags: ['fullstack', 'ml'],
@@ -90,7 +86,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    icon: '✈️',
     name: 'JetGenie',
     desc: 'AI travel planner that generates day-by-day itineraries from user preferences. React + Firebase frontend; Groq API for low-latency LLM inference.',
     tags: ['fullstack', 'ml'],
@@ -101,7 +96,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    icon: '🎬',
     name: 'MovieMate',
     desc: 'Recommendation engine that suggests films based on user preferences and viewing history. Python/Flask backend with a lightweight frontend; deployed on Vercel.',
     tags: ['fullstack'],
@@ -112,7 +106,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    icon: '🌌',
     name: 'Genre Galaxy',
     desc: 'Graph analysis pipeline over 10,000+ Goodreads books — builds a NetworkX co-occurrence graph across 100+ genres and renders it as an interactive Plotly visualization.',
     tags: ['viz'],
@@ -123,13 +116,21 @@ export const projects: Project[] = [
     ],
   },
   {
-    icon: '🗺️',
     name: 'Spatial Marketing Dashboard',
     desc: 'Tableau dashboard analyzing U.S. state-level marketing KPIs — surfaces regional performance patterns and trend anomalies from raw SQL data.',
     tags: ['analytics', 'viz'],
     tech: ['Tableau', 'SQL'],
     links: [
       { label: 'Tableau ↗', url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard' },
+    ],
+  },
+  {
+    name: 'Language Reader',
+    desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
+    tags: ['fullstack'],
+    tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'Razor Pages'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },
     ],
   },
 ]
@@ -144,6 +145,6 @@ export const skillGroups: SkillGroup[] = [
 ]
 
 export const organizations: Organization[] = [
-  { name: 'Girls Who Code', img: 'images/gwc.png', fallbackEmoji: '💻', description: 'Summer Immersion Program alum, club President, and Discrete Mathematics TA at RPI — introduced 40+ students to software engineering.' },
-  { name: 'COOP Careers', img: 'images/COOP.jpg', fallbackEmoji: '🚀', description: 'Data Analytics Fellow — built dashboards and analyzed datasets using Python, SQL, and Tableau; presented to a 500+ person audience.' },
+  { name: 'Girls Who Code', img: 'images/gwc.png', description: 'Summer Immersion Program alum, club President, and Discrete Mathematics TA at RPI — introduced 40+ students to software engineering.' },
+  { name: 'COOP Careers', img: 'images/COOP.jpg', description: 'Data Analytics Fellow — built dashboards and analyzed datasets using Python, SQL, and Tableau; presented to a 500+ person audience.' },
 ]

@@ -12,12 +12,6 @@ export interface Project {
   links: { label: string; url: string }[]
 }
 
-export interface Organization {
-  name: string
-  img: string
-  description: string
-}
-
 export const experiences: Experience[] = [
   {
     date: 'Feb – Jun 2026',
@@ -101,9 +95,4 @@ export const projects: Project[] = [
       { label: 'Tableau ↗', url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard' },
     ],
   },
-]
-
-export const organizations: Organization[] = [
-  { name: 'Girls Who Code', img: 'images/gwc.png', description: 'Summer Immersion Program alum, club President, and Discrete Mathematics TA at RPI — introduced 40+ students to software engineering.' },
-  { name: 'COOP Careers', img: 'images/COOP.jpg', description: 'Data Analytics Fellow — built dashboards and analyzed datasets using Python, SQL, and Tableau; presented to a 500+ person audience.' },
 ]

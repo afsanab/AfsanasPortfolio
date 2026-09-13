@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
-import { experiences, projects, organizations, Organization } from './data'
+import { experiences, projects } from './data'
 import './styles.css'
 
 const navLinks = [
   { href: '#about', label: 'About' },
   { href: '#projects', label: 'Projects' },
   { href: '#experience', label: 'Experience' },
-  { href: '#community', label: 'Community' },
 ]
 
 const aboutFacts = [
@@ -22,7 +21,6 @@ export default function App() {
   )
   const [activeNav, setActiveNav] = useState('')
   const [scrolled, setScrolled] = useState(false)
-  const [selectedOrg, setSelectedOrg] = useState<Organization | null>(null)
 
   // Theme management
   useEffect(() => {
@@ -47,14 +45,6 @@ export default function App() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Modal escape key
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') setSelectedOrg(null)
-    }
-    window.addEventListener('keydown', onKey)
-    return () => window.removeEventListener('keydown', onKey)
-  }, [])
 
   const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault()
@@ -222,36 +212,6 @@ export default function App() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* Community */}
-      <section id="community" className="section">
-        <div className="container">
-          <span className="section-label">Community</span>
-          <h2 className="section-title">Programs & organizations.</h2>
-          <div className="community-grid">
-            {organizations.map((org) => (
-              <button key={org.name} className="community-card" onClick={() => setSelectedOrg(org)}>
-                <img src={org.img} alt={org.name} className="community-logo" />
-                <span className="community-name">{org.name}</span>
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {selectedOrg && (
-          <div className="modal-overlay" onClick={(e) => {
-            if (e.target === e.currentTarget) setSelectedOrg(null)
-          }}>
-            <div className="modal">
-              <button className="modal-close" onClick={() => setSelectedOrg(null)}>
-                &times;
-              </button>
-              <h3 className="modal-title">{selectedOrg.name}</h3>
-              <p className="modal-desc">{selectedOrg.description}</p>
-            </div>
-          </div>
-        )}
       </section>
 
       {/* Footer */}

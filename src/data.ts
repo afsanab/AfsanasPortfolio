@@ -4,7 +4,6 @@ export interface Experience {
   company: string
   location: string
   badge?: string
-  bullets: string[]
 }
 
 export interface Project {
@@ -33,34 +32,18 @@ export const experiences: Experience[] = [
     company: 'Margin Research',
     location: 'New York, NY',
     badge: 'Current',
-    bullets: [
-      'Took Reagent — a SaaS code-analysis platform with graph-based threat detection for open-source software — from prototype to deployed v1 in 3 months for U.S. government customers, building its FastAPI service layer and React frontend from scratch.',
-      'Designed and built a Celery-based orchestrator coordinating a five-stage analysis pipeline, using Redis/Valkey for task queuing and Elasticsearch to index and search graph analysis results.',
-      'Built a reusable TypeScript graph-visualization tool that ingests NetworkX and JSON graphs, auto-detects node and relationship types, and surfaces per-node analytics including centrality and community detection — adopted across 2 internal projects.',
-      'Containerized platform services with Docker and authored pytest suites covering the orchestrator\'s task routing and failure handling, deploying through the team\'s CI/CD pipeline.',
-    ],
   },
   {
     date: 'Sep – Dec 2025',
     role: 'Software Engineer Intern',
     company: 'Pieces',
     location: 'New York, NY',
-    bullets: [
-      'Built a full-stack synthetic patient-record generator (Flask REST API + JavaScript frontend) using the Gemini API to produce realistic EHR data for training and testing the company\'s AI document-summarization product.',
-      'Designed the nested JSON schema for longitudinal patient records — demographics, conditions, and 4–6 encounters with vitals, labs, and separate nurse/provider note streams — validating clinical realism with two physician consultants.',
-      'Engineered prompt specifications and a self-healing parsing pipeline that detects malformed LLM JSON output and auto-repairs it via a secondary repair prompt before re-validation, enabling reliable generation of 200+ clinician-note entries per patient.',
-      'Implemented user-configurable batch generation and a JSON export feature for downstream model training, with an interactive timeline UI featuring collapsible encounter views.',
-    ],
   },
   {
     date: 'Jun – Dec 2023',
     role: 'Software Engineer Intern',
     company: 'ISO New England',
     location: 'Holyoke, MA',
-    bullets: [
-      'Built an automated reporting pipeline (Java, Spring Boot, Apache Camel, Thymeleaf) that queries PL/SQL databases and emails the team scheduled dashboards of daily power-pricing data.',
-      'Wrote a JUnit test suite for the Total Transfer Capability Calculator — a Java tool that models how much power can be transferred across New England\'s grid at projected future intervals — validating correctness of a domain-complex calculation engine.',
-    ],
   },
 ]
 

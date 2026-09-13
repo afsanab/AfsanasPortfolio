@@ -1,21 +1,12 @@
 import { useEffect, useState } from 'react'
-import { experiences, projects, skillGroups, organizations, Organization } from './data'
+import { experiences, projects, organizations, Organization } from './data'
 import './styles.css'
 
 const navLinks = [
   { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
   { href: '#projects', label: 'Projects' },
-  { href: '#skills', label: 'Skills' },
+  { href: '#experience', label: 'Experience' },
   { href: '#community', label: 'Community' },
-]
-
-const projectFilters = [
-  { label: 'All', value: 'all' },
-  { label: 'Full-Stack', value: 'fullstack' },
-  { label: 'Analytics', value: 'analytics' },
-  { label: 'ML / AI', value: 'ml' },
-  { label: 'Visualization', value: 'viz' },
 ]
 
 const aboutFacts = [
@@ -26,12 +17,11 @@ const aboutFacts = [
 ]
 
 export default function App() {
-  const [theme, setTheme] = useState<'dark' | 'light'>(() => 
-    (localStorage.getItem('theme') as 'dark' | 'light') ?? 'dark'
+  const [theme, setTheme] = useState<'dark' | 'light'>(() =>
+    (localStorage.getItem('theme') as 'dark' | 'light') ?? 'light'
   )
   const [activeNav, setActiveNav] = useState('')
   const [scrolled, setScrolled] = useState(false)
-  const [projectFilter, setProjectFilter] = useState('all')
   const [selectedOrg, setSelectedOrg] = useState<Organization | null>(null)
 
   // Theme management
@@ -47,8 +37,8 @@ export default function App() {
       setScrolled(window.scrollY > 20)
       const y = window.scrollY + 100
       let cur = sections[0]?.id ?? ''
-      sections.forEach((s) => { 
-        if (y >= (s as HTMLElement).offsetTop) cur = s.id 
+      sections.forEach((s) => {
+        if (y >= (s as HTMLElement).offsetTop) cur = s.id
       })
       setActiveNav(cur)
     }
@@ -59,8 +49,8 @@ export default function App() {
 
   // Modal escape key
   useEffect(() => {
-    const onKey = (e: KeyboardEvent) => { 
-      if (e.key === 'Escape') setSelectedOrg(null) 
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setSelectedOrg(null)
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -71,18 +61,11 @@ export default function App() {
     document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
   }
 
-  const filteredProjects = projects.filter(
-    (p) => projectFilter === 'all' || p.tags.includes(projectFilter)
-  )
-
   return (
     <>
       {/* Navigation */}
       <nav className={`nav ${scrolled ? 'scrolled' : ''}`}>
         <div className="nav-inner">
-          <a href="#top" className="logo" onClick={(e) => scrollTo(e, '#top')}>
-            <span className="logo-a">A</span>B
-          </a>
           <ul className="nav-links">
             {navLinks.map(({ href, label }) => (
               <li key={href}>
@@ -109,14 +92,8 @@ export default function App() {
       {/* Hero */}
       <header className="hero" id="top">
         <div className="hero-container">
-          <p className="hero-eyebrow">
-            <span className="hero-dot" /> Software Engineer · New York City
-          </p>
           <h1 className="hero-name">Afsana Bhuiyan</h1>
-          <p className="hero-role">Software Engineer</p>
-          <p className="hero-desc">
-            I build backend systems and data pipelines that take products from prototype to production.
-          </p>
+          <p className="hero-role">Fullstack Software Engineer</p>
           <div className="hero-ctas">
             <button
               className="btn btn-primary"
@@ -147,12 +124,12 @@ export default function App() {
             <div className="about-body">
               <span className="section-label">About</span>
               <p>
-                I'm a fullstack engineer with a focus on backend development. I'm driven by curiosity, 
+                I'm a fullstack engineer with a focus on backend development. I'm driven by curiosity,
                 problem-solving, and the challenge of turning ambiguous problems into practical software.
-                I'm currently teaching myself C# and .NET while building a language learning platform 
-                for reading books in a new language. I got started in programming through Girls Who Code, 
-                later leading my GWC chapter and TA'ing discrete math at RPI. Outside of work, I enjoy 
-                reading, hiking, and rating every matcha in NYC.
+                I'm currently teaching myself C# and .NET while building a language learning platform
+                for reading books in a new language. I got started in programming through Girls Who Code,
+                later leading my GWC chapter and TA'ing discrete math at RPI. Outside of work, I enjoy
+                reading, hiking, traveling, and learning languages.
               </p>
               <div className="facts-grid">
                 {aboutFacts.map(({ label, value }) => (
@@ -167,53 +144,14 @@ export default function App() {
         </div>
       </section>
 
-      {/* Experience */}
-      <section id="experience" className="section">
-        <div className="container">
-          <span className="section-label">Experience</span>
-          <h2 className="section-title">Where I've shipped.</h2>
-          <div className="timeline">
-            {experiences.map((exp, i) => (
-              <div className="timeline-item" key={i}>
-                <div className="timeline-left">
-                  <span className="timeline-date">{exp.date}</span>
-                  {exp.badge && <span className="timeline-badge">{exp.badge}</span>}
-                </div>
-                <div className="timeline-content">
-                  <div className="timeline-role">{exp.role}</div>
-                  <div className="timeline-company">
-                    {exp.company}<span className="timeline-location"> · {exp.location}</span>
-                  </div>
-                  <ul className="timeline-bullets">
-                    {exp.bullets.map((b, j) => <li key={j}>{b}</li>)}
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Projects */}
       <section id="projects" className="section">
         <div className="container">
           <span className="section-label">Projects</span>
           <h2 className="section-title">Things I've built.</h2>
-          
-          <div className="project-filters">
-            {projectFilters.map(({ label, value }) => (
-              <button
-                key={value}
-                className={`filter-chip ${projectFilter === value ? 'active' : ''}`}
-                onClick={() => setProjectFilter(value)}
-              >
-                {label}
-              </button>
-            ))}
-          </div>
 
           <div className="projects-grid">
-            {filteredProjects.map((p) => (
+            {projects.map((p) => (
               <div className="project-card" key={p.name}>
                 <div className="project-header">
                   <div className="project-links">
@@ -235,19 +173,23 @@ export default function App() {
         </div>
       </section>
 
-      {/* Skills */}
-      <section id="skills" className="section">
+      {/* Experience */}
+      <section id="experience" className="section">
         <div className="container">
-          <span className="section-label">Skills</span>
-          <h2 className="section-title">Tools of the trade.</h2>
-          <div className="skills-grid">
-            {skillGroups.map(({ category, items }) => (
-              <div className="skill-group" key={category}>
-                <h3 className="skill-category">{category}</h3>
-                <div className="skill-pills">
-                  {items.map((item) => (
-                    <span className="skill-pill" key={item}>{item}</span>
-                  ))}
+          <span className="section-label">Experience</span>
+          <h2 className="section-title">Where I've shipped.</h2>
+          <div className="timeline">
+            {experiences.map((exp, i) => (
+              <div className="timeline-item" key={i}>
+                <div className="timeline-left">
+                  <span className="timeline-date">{exp.date}</span>
+                  {exp.badge && <span className="timeline-badge">{exp.badge}</span>}
+                </div>
+                <div className="timeline-content">
+                  <div className="timeline-role">{exp.role}</div>
+                  <div className="timeline-company">
+                    {exp.company}<span className="timeline-location"> · {exp.location}</span>
+                  </div>
                 </div>
               </div>
             ))}
@@ -271,8 +213,8 @@ export default function App() {
         </div>
 
         {selectedOrg && (
-          <div className="modal-overlay" onClick={(e) => { 
-            if (e.target === e.currentTarget) setSelectedOrg(null) 
+          <div className="modal-overlay" onClick={(e) => {
+            if (e.target === e.currentTarget) setSelectedOrg(null)
           }}>
             <div className="modal">
               <button className="modal-close" onClick={() => setSelectedOrg(null)}>
@@ -301,9 +243,6 @@ export default function App() {
               <i className="fa fa-github" /> GitHub
             </a>
           </div>
-          <p className="footer-copy">
-            © {new Date().getFullYear()} · Built with React + TypeScript
-          </p>
         </div>
       </footer>
     </>

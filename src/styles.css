@@ -338,6 +338,16 @@ body.light .nav.scrolled {
   transform: translateY(-1px);
 }
 
+.fact-link {
+  display: block;
+  cursor: pointer;
+}
+
+.fact-link:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
 .fact-label {
   font-family: var(--font-mono);
   font-size: 0.63rem;

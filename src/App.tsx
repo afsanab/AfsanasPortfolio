@@ -10,7 +10,7 @@ const navLinks = [
 ]
 
 const aboutFacts = [
-  { label: 'Currently', value: 'Software Engineer · Margin Research' },
+  { label: 'Currently', value: 'Working on elprincipito', link: 'https://github.com/afsanab/elprincipito' },
   { label: 'Focus', value: 'Backend & full-stack engineering' },
   { label: 'Education', value: "B.S. Computer Science · RPI '24" },
   { label: 'Based in', value: 'New York City' },
@@ -107,9 +107,6 @@ export default function App() {
             <a className="btn btn-ghost" href="https://www.linkedin.com/in/afsanabhuiyan" target="_blank" rel="noopener">
               <i className="fa fa-linkedin" /> LinkedIn
             </a>
-            <a className="btn btn-ghost" href="mailto:afsanab620@gmail.com">
-              <i className="fa fa-envelope" /> Email
-            </a>
           </div>
         </div>
       </header>
@@ -132,11 +129,24 @@ export default function App() {
                 reading, hiking, traveling, and learning languages.
               </p>
               <div className="facts-grid">
-                {aboutFacts.map(({ label, value }) => (
-                  <div className="fact" key={label}>
-                    <div className="fact-label">{label}</div>
-                    <div className="fact-value">{value}</div>
-                  </div>
+                {aboutFacts.map(({ label, value, link }) => (
+                  link ? (
+                    <a 
+                      href={link} 
+                      target="_blank" 
+                      rel="noopener" 
+                      className="fact fact-link" 
+                      key={label}
+                    >
+                      <div className="fact-label">{label}</div>
+                      <div className="fact-value">{value}</div>
+                    </a>
+                  ) : (
+                    <div className="fact" key={label}>
+                      <div className="fact-label">{label}</div>
+                      <div className="fact-value">{value}</div>
+                    </div>
+                  )
                 ))}
               </div>
             </div>

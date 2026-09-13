@@ -27,11 +27,10 @@ export interface Organization {
 
 export const experiences: Experience[] = [
   {
-    date: 'Feb 2026 – Present',
+    date: 'Feb – Jun 2026',
     role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
-    badge: 'Current',
   },
   {
     date: 'Sep – Dec 2025',

@@ -160,6 +160,22 @@ export default function App() {
           <span className="section-label">Projects</span>
           <h2 className="section-title">Things I've built.</h2>
 
+          {/* GitHub Stats Card */}
+          <div className="github-card-wrapper">
+            <a 
+              href="https://github.com/afsanab" 
+              target="_blank" 
+              rel="noopener"
+              className="github-card-link"
+            >
+              <img 
+                src="images/afsanab-github-cards.png" 
+                alt="GitHub Stats" 
+                className="github-card"
+              />
+            </a>
+          </div>
+
           <div className="projects-grid">
             {projects.map((p) => (
               <div className="project-card" key={p.name}>

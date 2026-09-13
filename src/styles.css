@@ -419,7 +419,7 @@ body.light .nav.scrolled {
 /* ==================== PROJECTS ==================== */
 .github-card-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 3rem;
 }
 

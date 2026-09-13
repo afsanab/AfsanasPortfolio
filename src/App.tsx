@@ -158,7 +158,6 @@ export default function App() {
       <section id="projects" className="section">
         <div className="container">
           <span className="section-label">Projects</span>
-          <h2 className="section-title">Things I've built.</h2>
 
           {/* GitHub Stats Card */}
           <div className="github-card-wrapper">
@@ -203,7 +202,6 @@ export default function App() {
       <section id="experience" className="section">
         <div className="container">
           <span className="section-label">Experience</span>
-          <h2 className="section-title">Where I've shipped.</h2>
           <div className="timeline">
             {experiences.map((exp, i) => (
               <div className="timeline-item" key={i}>

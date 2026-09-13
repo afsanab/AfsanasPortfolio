@@ -193,7 +193,6 @@ export default function App() {
               <div className="timeline-item" key={i}>
                 <div className="timeline-left">
                   <span className="timeline-date">{exp.date}</span>
-                  {exp.badge && <span className="timeline-badge">{exp.badge}</span>}
                 </div>
                 <div className="timeline-content">
                   <div className="timeline-role">{exp.role}</div>

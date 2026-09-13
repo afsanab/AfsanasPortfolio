@@ -417,10 +417,26 @@ body.light .nav.scrolled {
 }
 
 /* ==================== PROJECTS ==================== */
-.github-card-wrapper {
+.projects-header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 3rem;
+  gap: 2rem;
+}
+
+.projects-main-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 2.9rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-top: 0.5rem;
+  line-height: 1.15;
+}
+
+.github-card-wrapper {
+  flex-shrink: 0;
 }
 
 .github-card-link {
@@ -443,6 +459,18 @@ body.light .nav.scrolled {
   display: block;
   border: 1px solid var(--border);
   border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .github-card-wrapper {
+    width: 100%;
+    max-width: 300px;
+  }
 }
 
 .projects-grid {

@@ -82,7 +82,9 @@ export default function App() {
       {/* Hero */}
       <header className="hero" id="top">
         <div className="hero-container">
-          <h1 className="hero-name">Afsana Bhuiyan</h1>
+          <div className="typewriter">
+            <h1 className="hero-name">Afsana Bhuiyan</h1>
+          </div>
           <p className="hero-role">Fullstack Software Engineer</p>
           <div className="hero-ctas">
             <button

@@ -227,6 +227,32 @@ body.light .nav.scrolled {
   align-items: center;
 }
 
+.typewriter {
+  display: inline-block;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid var(--accent);
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent); }
+}
+
 .hero-name {
   font-family: "Parisienne", cursive;
   font-style: normal;

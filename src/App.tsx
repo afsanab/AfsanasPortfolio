@@ -111,21 +111,21 @@ export default function App() {
             <div className="about-body">
               <span className="section-label">About</span>
               <p>
-                I'm a fullstack engineer with a focus on backend development. I'm driven by curiosity,
-                problem-solving, and the challenge of turning ambiguous problems into practical software.
-                I'm currently teaching myself C# and .NET while building a language learning platform
-                for reading books in a new language. I got started in programming through Girls Who Code,
-                later leading my GWC chapter and TA'ing discrete math at RPI. Outside of work, I enjoy
-                reading, hiking, traveling, and learning languages.
+                I'm a fullstack software engineer with a focus on backend development. I love building software
+                that solves problems and improves systems.
+                Currently, I'm teaching myself C# and .NET while building el principito, a language learning app
+                to help me improve my spanish. My introduction to programming was through the Girls Who Code
+                summer immersion program, later leading my GWC chapter and TA'ing discrete math at RPI.
+                Outside of work, I enjoy reading, hiking, and traveling.
               </p>
               <div className="facts-grid">
                 {aboutFacts.map(({ label, value, link }) => (
                   link ? (
-                    <a 
-                      href={link} 
-                      target="_blank" 
-                      rel="noopener" 
-                      className="fact fact-link" 
+                    <a
+                      href={link}
+                      target="_blank"
+                      rel="noopener"
+                      className="fact fact-link"
                       key={label}
                     >
                       <div className="fact-label">{label}</div>
@@ -154,18 +154,18 @@ export default function App() {
             </div>
             {/* GitHub Stats Card */}
             <div className="github-card-wrapper">
-            <a 
-              href="https://github.com/afsanab" 
-              target="_blank" 
-              rel="noopener"
-              className="github-card-link"
-            >
-              <img 
-                src="images/afsanab-github-cards.png" 
-                alt="GitHub Stats" 
-                className="github-card"
-              />
-            </a>
+              <a
+                href="https://github.com/afsanab"
+                target="_blank"
+                rel="noopener"
+                className="github-card-link"
+              >
+                <img
+                  src="images/afsanab-github-cards.png"
+                  alt="GitHub Stats"
+                  className="github-card"
+                />
+              </a>
             </div>
           </div>
 

@@ -236,21 +236,35 @@ body.light .nav.scrolled {
   border-right: 0.15em solid var(--accent);
   white-space: nowrap;
   margin: 0 auto;
-  animation: 
+  padding-bottom: 0.1em;
+  line-height: 1.5;
+  animation:
     typing 3.5s steps(40, end),
     blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--accent); }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: var(--accent);
+  }
 }
 
 .hero-name {

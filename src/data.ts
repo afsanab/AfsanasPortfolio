@@ -33,6 +33,21 @@ export const experiences: Experience[] = [
   },
 ]
 
+export const leadershipExperiences: Experience[] = [
+  {
+    date: 'Jan – May 2023',
+    role: 'Computer Science Teaching Assistant',
+    company: 'Rensselaer Polytechnic Institute',
+    location: 'Troy, NY',
+  },
+  {
+    date: 'Jun – Aug 2022',
+    role: 'Web Development Teaching Assistant',
+    company: 'Girls Who Code Summer Immersion Program',
+    location: 'New York, NY',
+  },
+]
+
 export const projects: Project[] = [
   {
     name: 'elprincipito',

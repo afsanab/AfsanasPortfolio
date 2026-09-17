@@ -416,6 +416,10 @@ body.light .nav.scrolled {
   font-weight: 400;
 }
 
+.leadership-section {
+  margin-top: 4rem;
+}
+
 /* ==================== PROJECTS ==================== */
 .projects-header {
   display: flex;
@@ -466,7 +470,7 @@ body.light .nav.scrolled {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .github-card-wrapper {
     width: 100%;
     max-width: 300px;

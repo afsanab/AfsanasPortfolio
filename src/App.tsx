@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { experiences, projects } from './data'
+import { experiences, leadershipExperiences, projects } from './data'
 import './styles.css'
 
 const navLinks = [
@@ -112,10 +112,10 @@ export default function App() {
               <span className="section-label">About</span>
               <p>
                 I'm a fullstack software engineer with a focus on backend development. I love building software
-                that solves problems and improves systems.
+                that solves everyday problems.
                 Currently, I'm teaching myself C# and .NET while building el principito, a language learning app
                 to help me improve my spanish. My introduction to programming was through the Girls Who Code
-                summer immersion program, later leading my GWC chapter and TA'ing discrete math at RPI.
+                summer immersion program, and later I went on to study Computer Science and leading my GWC chapter at Rensselaer Polytechnic Institute.
                 Outside of work, I enjoy reading, hiking, and traveling.
               </p>
               <div className="facts-grid">
@@ -195,7 +195,7 @@ export default function App() {
       {/* Experience */}
       <section id="experience" className="section">
         <div className="container">
-          <span className="section-label">Experience</span>
+          <span className="section-label">Work Experience</span>
           <div className="timeline">
             {experiences.map((exp, i) => (
               <div className="timeline-item" key={i}>
@@ -210,6 +210,25 @@ export default function App() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="leadership-section">
+            <span className="section-label">Leadership Experience</span>
+            <div className="timeline">
+              {leadershipExperiences.map((exp, i) => (
+                <div className="timeline-item" key={i}>
+                  <div className="timeline-left">
+                    <span className="timeline-date">{exp.date}</span>
+                  </div>
+                  <div className="timeline-content">
+                    <div className="timeline-role">{exp.role}</div>
+                    <div className="timeline-company">
+                      {exp.company}<span className="timeline-location"> · {exp.location}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

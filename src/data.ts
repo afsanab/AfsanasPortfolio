@@ -49,20 +49,21 @@ export const leadershipExperiences: Experience[] = [
 ]
 
 export const projects: Project[] = [
-  {
-    name: 'CareTrack',
-    desc: 'A HIPAA-compliant clinical workflow system for managing patient admissions and physician tasks in medical facilities. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
-    tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
-    ],
-  },
+
   {
     name: 'elprincipito',
     desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
     tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'Razor Pages'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },
+    ],
+  },
+  {
+    name: 'CareTrack',
+    desc: 'A HIPAA-compliant clinical workflow system for managing patient admissions and physician tasks in medical facilities. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
+    tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
     ],
   },
   {

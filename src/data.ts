@@ -49,15 +49,6 @@ export const leadershipExperiences: Experience[] = [
 ]
 
 export const projects: Project[] = [
-
-  {
-    name: 'elprincipito',
-    desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
-    tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'Razor Pages'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },
-    ],
-  },
   {
     name: 'CareTrack',
     desc: 'A HIPAA-compliant clinical workflow system for managing patient admissions and physician tasks, currently in use at a nursing home. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
@@ -65,6 +56,14 @@ export const projects: Project[] = [
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
       { label: 'Live ↗', url: 'https://white-mushroom-026c4be0f.2.azurestaticapps.net/' },
+    ],
+  },
+  {
+    name: 'elprincipito',
+    desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
+    tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'Razor Pages'],
+    links: [
+      { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },
     ],
   },
   {

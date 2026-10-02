@@ -60,10 +60,11 @@ export const projects: Project[] = [
   },
   {
     name: 'CareTrack',
-    desc: 'A HIPAA-compliant clinical workflow system for managing patient admissions and physician tasks in medical facilities. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
+    desc: 'A HIPAA-compliant clinical workflow system for managing patient admissions and physician tasks, currently in use at a nursing home. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
+      { label: 'Live ↗', url: 'https://white-mushroom-026c4be0f.2.azurestaticapps.net/' },
     ],
   },
   {

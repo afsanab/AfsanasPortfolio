@@ -152,22 +152,6 @@ export default function App() {
           <div className="projects-header">
             <div>
               <span className="section-label">Projects</span>
-              <h2 className="projects-main-title">Featured Work</h2>
-            </div>
-            {/* GitHub Stats Card */}
-            <div className="github-card-wrapper">
-              <a
-                href="https://github.com/afsanab"
-                target="_blank"
-                rel="noopener"
-                className="github-card-link"
-              >
-                <img
-                  src="images/afsanab-github-cards.png"
-                  alt="GitHub Stats"
-                  className="github-card"
-                />
-              </a>
             </div>
           </div>
 

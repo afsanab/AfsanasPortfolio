@@ -75,7 +75,7 @@ export default function App() {
             onClick={() => setTheme(t => t === 'dark' ? 'light' : 'dark')}
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? '☀️' : '🌙'}
+            {theme === 'dark' ? '☼' : '☾'}
           </button>
         </div>
       </nav>

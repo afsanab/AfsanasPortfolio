@@ -196,6 +196,7 @@ body.light .nav.scrolled {
 .theme-btn {
   background: none;
   border: 1px solid var(--border);
+  color: var(--text);
   border-radius: 50%;
   width: 34px;
   height: 34px;

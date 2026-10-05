@@ -77,8 +77,8 @@ export const projects: Project[] = [
   },
   {
     name: 'LinkUP',
-    desc: 'Location-optimization app that finds the fairest meetup spot by analyzing public transit times for all users. React frontend with Google Maps integration, Node/Express backend, and LangChain reasoning layer.',
-    tech: ['React', 'Node.js', 'Express', 'LangChain', 'Google Maps API'],
+    desc: 'A meetup-spot finder for groups in NYC, built with a team of four in 24 hours at Columbia DivHacks. Everyone drops a location, and it ranks fair spots using Google\'s transit travel times, with LangChain-written explanations for each pick. I built on the React frontend.',
+    tech: ['React', 'Node.js', 'Express', 'Google Maps API', 'LangChain'],
     links: [
       { label: 'GitHub', url: 'https://github.com/tasmiachow/DivHacks' },
       { label: 'Live ↗', url: 'https://linkup-nyc-client.onrender.com/' },

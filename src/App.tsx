@@ -113,12 +113,11 @@ export default function App() {
             <div className="about-body">
               <span className="section-label">About</span>
               <p>
-                I'm a fullstack software engineer with a focus on backend development. I love building software
-                that solves everyday problems.
-                Currently, I'm teaching myself C# and .NET while building el principito, a language learning app
-                to help me improve my spanish. My introduction to programming was through the Girls Who Code
-                summer immersion program, and later I went on to study Computer Science and leading my GWC chapter at Rensselaer Polytechnic Institute.
-                Outside of work, I enjoy reading, hiking, and traveling.
+                I'm a backend-focused software engineer in New York City. At Margin Research, I helped ship a threat-detection platform
+                to government customers, and I built CareTrack, a clinical workflow app that's in production at a nursing home. I got started through
+                Girls Who Code, then studied Computer Science at Rensselaer Polytechnic Institute, where I led the GWC chapter. Teaching has
+                stayed a thread in my work, from TA roles to NYC public schools. I'm currently building El Principito, a Spanish reading app,
+                to practice my own Spanish. Outside of work, I enjoy reading, hiking, and traveling.
               </p>
               <div className="facts-grid">
                 {aboutFacts.map(({ label, value, link }) => (

@@ -15,6 +15,7 @@ const aboutFacts = [
   { label: 'Based in', value: 'New York City' },
 ]
 
+
 export default function App() {
   const [theme, setTheme] = useState<'dark' | 'light'>(() =>
     (localStorage.getItem('theme') as 'dark' | 'light') ?? 'light'

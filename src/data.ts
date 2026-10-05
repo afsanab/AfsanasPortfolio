@@ -61,7 +61,7 @@ export const projects: Project[] = [
   {
     name: 'elprincipito',
     desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
-    tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'Razor Pages'],
+    tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'React Native'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },
     ],
@@ -93,30 +93,30 @@ export const projects: Project[] = [
       { label: 'DevPost ↗', url: 'https://devpost.com/software/jetgenie' },
     ],
   },
-  {
-    name: 'MovieMate',
-    desc: 'Recommendation engine that suggests films based on user preferences and viewing history. Python/Flask backend with a lightweight frontend; deployed on Vercel.',
-    tech: ['Python', 'Flask', 'Vercel'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/afsanab/MovieMate' },
-      { label: 'Live ↗', url: 'https://moviemate-virid.vercel.app/' },
-    ],
-  },
-  {
-    name: 'Genre Galaxy',
-    desc: 'Graph analysis pipeline over 10,000+ Goodreads books — builds a NetworkX co-occurrence graph across 100+ genres and renders it as an interactive Plotly visualization.',
-    tech: ['Python', 'Flask', 'NetworkX', 'Plotly'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/afsanab/GenreGalaxy' },
-      { label: 'Live ↗', url: 'https://genregalaxy.onrender.com/' },
-    ],
-  },
-  {
-    name: 'Spatial Marketing Dashboard',
-    desc: 'Tableau dashboard analyzing U.S. state-level marketing KPIs — surfaces regional performance patterns and trend anomalies from raw SQL data.',
-    tech: ['Tableau', 'SQL'],
-    links: [
-      { label: 'Tableau ↗', url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard' },
-    ],
-  },
+  // {
+  //   name: 'MovieMate',
+  //   desc: 'Recommendation engine that suggests films based on user preferences and viewing history. Python/Flask backend with a lightweight frontend; deployed on Vercel.',
+  //   tech: ['Python', 'Flask', 'Vercel'],
+  //   links: [
+  //     { label: 'GitHub', url: 'https://github.com/afsanab/MovieMate' },
+  //     { label: 'Live ↗', url: 'https://moviemate-virid.vercel.app/' },
+  //   ],
+  // },
+  // {
+  //   name: 'Genre Galaxy',
+  //   desc: 'Graph analysis pipeline over 10,000+ Goodreads books — builds a NetworkX co-occurrence graph across 100+ genres and renders it as an interactive Plotly visualization.',
+  //   tech: ['Python', 'Flask', 'NetworkX', 'Plotly'],
+  //   links: [
+  //     { label: 'GitHub', url: 'https://github.com/afsanab/GenreGalaxy' },
+  //     { label: 'Live ↗', url: 'https://genregalaxy.onrender.com/' },
+  //   ],
+  // },
+  // {
+  //   name: 'Spatial Marketing Dashboard',
+  //   desc: 'Tableau dashboard analyzing U.S. state-level marketing KPIs — surfaces regional performance patterns and trend anomalies from raw SQL data.',
+  //   tech: ['Tableau', 'SQL'],
+  //   links: [
+  //     { label: 'Tableau ↗', url: 'https://public.tableau.com/views/SpatialStrategyDashboard/SpatialDashboard' },
+  //   ],
+  // },
 ]

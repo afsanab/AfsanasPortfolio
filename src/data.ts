@@ -68,8 +68,8 @@ export const projects: Project[] = [
   },
   {
     name: 'Sentivest',
-    desc: 'Full-stack financial sentiment platform. Aggregates real-time news and social data, runs NLP scoring via Gemini API, and renders results as interactive dashboards. Built end-to-end at a hackathon.',
-    tech: ['React', 'Flask', 'Supabase', 'Gemini API', 'Tailwind'],
+    desc: 'A stock-sentiment dashboard built with a team of four at a weekend hackathon at Queens College. Users add tickers to a watchlist and see AI-scored sentiment from news and social posts, with the headlines behind each score and sentiment history over time. I set up the Supabase backend: user authentication, the database schema, and the code that populates it, with each user\'s data tied to their account.',
+    tech: ['Supabase', 'Flask', 'Gemini API', 'React'],
     links: [
       { label: 'GitHub', url: 'https://github.com/tasmiachow/HackKnight' },
       { label: 'Live ↗', url: 'https://sentivent-frontend.onrender.com/' },

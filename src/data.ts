@@ -84,15 +84,15 @@ export const projects: Project[] = [
       { label: 'Live ↗', url: 'https://linkup-nyc-client.onrender.com/' },
     ],
   },
-  {
-    name: 'JetGenie',
-    desc: 'AI travel planner that generates day-by-day itineraries from user preferences. React + Firebase frontend; Groq API for low-latency LLM inference.',
-    tech: ['React', 'Firebase', 'Groq API'],
-    links: [
-      { label: 'GitHub', url: 'https://github.com/tasmiachow/JetGenie' },
-      { label: 'DevPost ↗', url: 'https://devpost.com/software/jetgenie' },
-    ],
-  },
+  // {
+  //   name: 'JetGenie',
+  //   desc: 'AI travel planner that generates day-by-day itineraries from user preferences. React + Firebase frontend; Groq API for low-latency LLM inference.',
+  //   tech: ['React', 'Firebase', 'Groq API'],
+  //   links: [
+  //     { label: 'GitHub', url: 'https://github.com/tasmiachow/JetGenie' },
+  //     { label: 'DevPost ↗', url: 'https://devpost.com/software/jetgenie' },
+  //   ],
+  // },
   // {
   //   name: 'MovieMate',
   //   desc: 'Recommendation engine that suggests films based on user preferences and viewing history. Python/Flask backend with a lightweight frontend; deployed on Vercel.',

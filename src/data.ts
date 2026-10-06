@@ -65,7 +65,7 @@ export const projects: Project[] = [
   },
   {
     name: 'El Principito',
-    desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
+    desc: 'A Spanish reading companion I\'m building to practice my own Spanish: read short stories, tap a word for its translation, and save new words to review. Layered ASP.NET Core REST API (EF Core, SQLite) with a React Native/Expo client in TypeScript.',
     tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'React Native'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },

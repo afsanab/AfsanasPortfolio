@@ -19,19 +19,19 @@ export const experiences: Experience[] = [
     company: 'Riverside Health & Rehabilitation Center',
     location: 'Remote',
   }, {
-    date: 'Feb – Jun 2026',
+    date: 'Feb 2026 – Jun 2026',
     role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
   },
   {
-    date: 'Sep – Jan 2025',
+    date: 'Sep 2025 – Jan 2026',
     role: 'Software Engineer Intern',
     company: 'Pieces',
     location: 'New York, NY',
   },
   {
-    date: 'Jun – Dec 2023',
+    date: 'Jun 2023 – Dec 2023',
     role: 'Software Engineer Intern',
     company: 'ISO New England',
     location: 'Holyoke, MA',
@@ -40,13 +40,13 @@ export const experiences: Experience[] = [
 
 export const leadershipExperiences: Experience[] = [
   {
-    date: 'Jan – May 2023',
+    date: 'Jan 2023 – May 2023',
     role: 'Computer Science Teaching Assistant',
     company: 'Rensselaer Polytechnic Institute',
     location: 'Troy, NY',
   },
   {
-    date: 'Jun – Aug 2022',
+    date: 'Jun 2022 – Aug 2022',
     role: 'Web Development Teaching Assistant',
     company: 'Girls Who Code Summer Immersion Program',
     location: 'New York, NY',

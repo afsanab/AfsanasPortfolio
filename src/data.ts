@@ -56,7 +56,7 @@ export const leadershipExperiences: Experience[] = [
 export const projects: Project[] = [
   {
     name: 'CareTrack',
-    desc: 'A clinical workflow system, built around HIPAA\'s technical safeguards, for managing patient admissions and physician tasks, currently in use at a nursing home. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
+    desc: 'Clinical workflow app in production at a nursing home. Tracks admissions and automates physician documentation tasks and deadlines for up to 100 residents. Built around HIPAA\'s technical safeguards: role-based access control, audit logging, JWT auth in httpOnly cookies with CSRF protection, account lockout, and idle-session timeouts. Dockerized and deployed on Azure, with CI in GitHub Actions.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },

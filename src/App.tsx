@@ -9,7 +9,7 @@ const navLinks = [
 ]
 
 const aboutFacts = [
-  { label: 'Currently', value: 'Freelance SWE looking for fulltime roles' },
+  { label: 'Currently', value: 'Freelancing · open to full-time roles' },
   { label: 'Focus', value: 'Backend & full-stack engineering' },
   { label: 'Education', value: "B.S. Computer Science · RPI '24" },
   { label: 'Based in', value: 'New York City' },

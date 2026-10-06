@@ -55,7 +55,7 @@ export const projects: Project[] = [
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
-      { label: 'Live ↗', url: 'https://white-mushroom-026c4be0f.2.azurestaticapps.net/' },
+      { label: 'Demo ↗', url: 'https://youtu.be/6kJ9ejD63v0' },
     ],
   },
   {

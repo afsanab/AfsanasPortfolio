@@ -64,7 +64,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'elprincipito',
+    name: 'El Principito',
     desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
     tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'React Native'],
     links: [

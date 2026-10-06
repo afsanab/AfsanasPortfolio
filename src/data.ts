@@ -14,13 +14,18 @@ export interface Project {
 
 export const experiences: Experience[] = [
   {
+    date: 'Jun 2026 – Present',
+    role: 'Software Engineer',
+    company: 'Riverside Health & Rehabilitation Center',
+    location: 'Remote',
+  }, {
     date: 'Feb – Jun 2026',
     role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
   },
   {
-    date: 'Sep – Dec 2025',
+    date: 'Sep – Jan 2025',
     role: 'Software Engineer Intern',
     company: 'Pieces',
     location: 'New York, NY',
@@ -78,7 +83,7 @@ export const projects: Project[] = [
   {
     name: 'LinkUP',
     desc: 'A meetup-spot finder for groups in NYC, built with a team of four in 24 hours at Columbia DivHacks. Everyone drops a location, and it ranks fair spots using Google\'s transit travel times, with LangChain-written explanations for each pick. I built on the React frontend.',
-    tech: ['React', 'Node.js', 'Express', 'Google Maps API', 'LangChain'],
+    tech: ['React', 'Node.js', 'Express', 'Google Maps API'],
     links: [
       { label: 'GitHub', url: 'https://github.com/tasmiachow/DivHacks' },
       { label: 'Live ↗', url: 'https://linkup-nyc-client.onrender.com/' },

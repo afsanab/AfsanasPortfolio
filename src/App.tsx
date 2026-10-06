@@ -86,7 +86,7 @@ export default function App() {
           <div className="typewriter">
             <h1 className="hero-name">Afsana Bhuiyan</h1>
           </div>
-          <p className="hero-role">Fullstack Software Engineer</p>
+          <p className="hero-role">Software Engineer</p>
           <div className="hero-ctas">
             <button
               className="btn btn-primary"

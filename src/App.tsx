@@ -180,6 +180,7 @@ export default function App() {
                   <div className="timeline-company">
                     {exp.company}<span className="timeline-location"> · {exp.location}</span>
                   </div>
+                  {exp.description && <div className="timeline-description">{exp.description}</div>}
                 </div>
               </div>
             ))}

@@ -3,6 +3,7 @@ export interface Experience {
   role: string
   company: string
   location: string
+  description?: string
 }
 
 export interface Project {
@@ -15,26 +16,30 @@ export interface Project {
 export const experiences: Experience[] = [
   {
     date: 'Jun 2026 – Present',
-    role: 'Software Engineer',
+    role: 'Software Engineer (Freelance)',
     company: 'Riverside Health & Rehabilitation Center',
     location: 'Remote',
+    description: 'Built and maintain CareTrack, the admissions and physician-task app the facility runs in production.',
   }, {
     date: 'Feb – Jun 2026',
     role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
+    description: 'Designed the FastAPI service and Celery/Redis job pipeline for the first SaaS release of Reagent, shipped to government customers in four months.',
   },
   {
     date: 'Sep – Jan 2025',
     role: 'Software Engineer Intern',
     company: 'Pieces',
     location: 'New York, NY',
+    description: 'Created a Flask and Gemini API tool that generates synthetic patient records for testing an AI clinical-summarization product.',
   },
   {
     date: 'Jun – Dec 2023',
     role: 'Software Engineer Intern',
     company: 'ISO New England',
     location: 'Holyoke, MA',
+    description: 'Automated a daily power-pricing chart report with a Spring Boot service.',
   },
 ]
 

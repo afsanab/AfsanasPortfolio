@@ -21,21 +21,21 @@ export const experiences: Experience[] = [
     location: 'Remote',
     description: 'Built and maintain CareTrack, the admissions and physician-task app the facility runs in production.',
   }, {
-    date: 'Feb – Jun 2026',
+    date: 'Feb 2026 – Jun 2026',
     role: 'Software Engineer (Contract)',
     company: 'Margin Research',
     location: 'New York, NY',
     description: 'Designed the FastAPI service and Celery/Redis job pipeline for the first SaaS release of Reagent, shipped to government customers in four months.',
   },
   {
-    date: 'Sep – Jan 2025',
+    date: 'Sep 2025 – Jan 2026',
     role: 'Software Engineer Intern',
     company: 'Pieces',
     location: 'New York, NY',
     description: 'Created a Flask and Gemini API tool that generates synthetic patient records for testing an AI clinical-summarization product.',
   },
   {
-    date: 'Jun – Dec 2023',
+    date: 'Jun 2023 – Dec 2023',
     role: 'Software Engineer Intern',
     company: 'ISO New England',
     location: 'Holyoke, MA',
@@ -45,13 +45,13 @@ export const experiences: Experience[] = [
 
 export const leadershipExperiences: Experience[] = [
   {
-    date: 'Jan – May 2023',
+    date: 'Jan 2023 – May 2023',
     role: 'Computer Science Teaching Assistant',
     company: 'Rensselaer Polytechnic Institute',
     location: 'Troy, NY',
   },
   {
-    date: 'Jun – Aug 2022',
+    date: 'Jun 2022 – Aug 2022',
     role: 'Web Development Teaching Assistant',
     company: 'Girls Who Code Summer Immersion Program',
     location: 'New York, NY',
@@ -61,7 +61,7 @@ export const leadershipExperiences: Experience[] = [
 export const projects: Project[] = [
   {
     name: 'CareTrack',
-    desc: 'A clinical workflow system, built around HIPAA\'s technical safeguards, for managing patient admissions and physician tasks, currently in use at a nursing home. React frontend with a Node/Express + Postgres backend, JWT auth, and Winston audit logging; deployed on Azure.',
+    desc: 'Clinical workflow app in production at a nursing home. Tracks admissions and automates physician documentation tasks and deadlines for up to 100 residents. Built around HIPAA\'s technical safeguards: role-based access control, audit logging, JWT auth in httpOnly cookies with CSRF protection, account lockout, and idle-session timeouts. Dockerized and deployed on Azure, with CI in GitHub Actions.',
     tech: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Azure'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/careTrack' },
@@ -69,8 +69,8 @@ export const projects: Project[] = [
     ],
   },
   {
-    name: 'elprincipito',
-    desc: 'A language-learning reading companion where users can browse short children\'s stories, look up words, and save unfamiliar vocabulary to a personal list.',
+    name: 'El Principito',
+    desc: 'A Spanish reading companion I\'m building to practice my own Spanish: read short stories, tap a word for its translation, and save new words to review. Layered ASP.NET Core REST API (EF Core, SQLite) with a React Native/Expo client in TypeScript.',
     tech: ['C#', 'ASP.NET Core', 'Entity Framework', 'SQLite', 'React Native'],
     links: [
       { label: 'GitHub', url: 'https://github.com/afsanab/elprincipito' },

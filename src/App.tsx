@@ -11,7 +11,7 @@ const navLinks = [
 const aboutFacts = [
   { label: 'Currently', value: 'Freelancing · open to full-time roles' },
   { label: 'Focus', value: 'Backend & full-stack engineering' },
-  { label: 'Education', value: "B.S. Computer Science · RPI '24" },
+  { label: 'Education', value: "Bachelors of Science in Computer Science" },
   { label: 'Based in', value: 'New York City' },
 ]
 
